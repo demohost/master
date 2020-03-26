@@ -69,7 +69,7 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
-    $('#main-wrapper').append('<div class="call-to-action-block"><a href="tel:7721065025" class="phone" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i></a><a href="mailto:lead.gen@iitms.co.in" class="email" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="https://api.whatsapp.com/send?phone=917721065025" class="whatsapp" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></div>')
+    $('#main-wrapper').append('<div class="call-to-action-block"><a href="tel:9885900089" class="phone" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i></a><a href="mailto:admin@beessoftware.in" class="email" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><a href="https://api.whatsapp.com/send?phone=9885900089" class="whatsapp" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></div>')
 
     //$('.redirect-link').on('click', function () {
     //    $('.redirected-module').addClass('test');
