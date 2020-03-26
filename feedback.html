@@ -1,0 +1,828 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<!-- Mirrored from www.iitms.co.in/feedback.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Mar 2020 17:29:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head id="Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"5a4af856b9","applicationID":"265551880","transactionName":"YVQAbBRSV0sHUBZbX1geI2s2HF9dA1cAU1NdHwNLFks=","queueTime":0,"applicationTime":38,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"5a4af856b9",applicationID:"265551880"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /><meta name="description" content="MasterSoft is one of the most trusted brand in providing highly reliable education ERP Software. Also, MasterSoft is excellent at Online examination system, school, college and university management system" /><meta name="keywords" content="university management system, university erp softwares / system, college management system, education software company, erp for education system, mastersoft nagpur, mastersoft, software company in nagpur, erp services" /><meta name="author" /><meta name="p:domain_verify" content="aa560a11f36bae1053650f0585a463af" /><link rel="shortcut icon" href="Images/logo%20and%20icon/MS_favicon.ico" /><title>
+	MasterSoft - Education ERP India
+</title><link rel="stylesheet" type="text/css" href="Clientgallery/css/layout.css" media="screen" />
+
+    
+
+    
+
+    <!--[if IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css" media="screen" /><![endif]-->
+
+    <!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
+
+    <!-- BEGIN: load jquery -->
+    <script src="dt_table/jquery-1.12.3.js"></script>
+    <script src="Clientgallery/js/jquery-1.8.3.min.js"></script>
+    
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('ul.nav-tabs li').click(function () {
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.nav-tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#" + tab_id).addClass('current');
+            })
+
+        })
+    </script>
+
+
+    <script type="text/javascript">
+
+        $(window).load(function () {
+
+            $('#demo-side-bar').removeAttr('style');
+
+        });
+
+    </script>
+
+    <style type="text/css">
+        #demo-side-bar { left: 90%!important; display: block!important; }
+
+        #branding .floatright { margin-right: 130px!important; }
+    </style>
+    <!--  payal---->
+    
+
+    <!--Second menu tab code    end-->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" /><link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!--smooth scroll-->
+
+    <script>
+
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <!--<script type="text/javascript">
+        $(document).ready(function () {
+            $('ul.nav li.dropdown').hover(function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+            }, function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
+        });
+    </script>-->
+    <!--smooth scroll end-->
+
+    
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-PR9VM4');</script>
+    <!-- End Google Tag Manager -->
+    
+
+
+    
+
+    <!--Second menu tab code    end-->
+    
+    
+    <!-- Bootstrap core CSS -->
+    
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+          
+            $("[id*=Button_Feedback_Submit]").click(function () {
+                if ($("[id*=Textbox_MobileNo]").val() == "") {
+                    $("[id*=lblMsg]").show();
+                    //    document.getElementById('lblMsg').style.visibility = 'visible';
+                    $("[id*=lblMsg]").text("Please enter contact number");
+                    // $("[id*=txtPhone]").focus();
+                    return false;
+                }
+
+                if ($("[id*=Textbox_MobileNo]").val().length < 5) {
+                    $("[id*=lblMsg]").show();
+                    //    document.getElementById('lblMsg').style.visibility = 'visible';
+                    $("[id*=lblMsg]").text("Please enter valid contact number");
+                    // $("[id*=txtPhone]").focus();
+                    return false;
+                }
+
+            });
+
+            $("[id*=Textbox_MobileNo]").blur(function () {
+                if ($("[id*=Textbox_MobileNo]").val() == "") {
+                    $("[id*=lblMsg]").show();
+                    //    document.getElementById('lblMsg').style.visibility = 'visible';
+                    $("[id*=lblMsg]").text("");
+                    // $("[id*=txtPhone]").focus();
+                    return false;
+                }
+                if ($("[id*=Textbox_MobileNo]").val().length < 5) {
+                    $("[id*=lblMsg]").show();
+                    $("[id*=lblMsg]").text("Please enter valid contact number");
+                    // $("[id*=txtPhone]").focus();
+                    return false;
+                }
+                else { $("[id*=lblMsg]").hide(); }
+            });
+        });
+
+       
+        function Count(x) {
+
+            var nLength = document.getElementById(x).value.length;
+           // if (nLength < 10 && nLength > 0) {
+            //    if (nLength <= 0) {
+             //       document.getElementById('ContentPlaceHolder1_lblMsg').style.visibility = 'visible';
+             //       document.getElementById('ContentPlaceHolder1_lblMsg').innerHTML = "Please enter contact number.";
+             //   }
+                if (nLength < 5) {
+                    // alert("Please enter valid mobile no.");
+                    document.getElementById('ContentPlaceHolder1_lblMsg').style.visibility = 'visible';
+                    document.getElementById('ContentPlaceHolder1_lblMsg').innerHTML = "Please enter valid contact number.";
+
+                    //document.getElementById(x).value = "";
+                }
+            //}
+            // document.getElementById('lblMsg').style.visibility = 'hidden';
+        }
+
+       
+    </script>
+    
+    <!-- Bootstrap core CSS -->
+    
+</head>
+<body>
+    <header class="navbar navbar-default" role="navigation">
+        <div class="top-links">
+            <div class="container">
+                <div class="row">
+                    <ul>
+                        <li><a href="downloadenquiry.html">Product Enquiry</a></li>
+                        <!--<li><a href="/feedback.aspx">Feedback</a></li>-->
+                        <li><a href="http://cloud.mastersofterp.in/" target="_blank">MasterSoft Cloud Login</a></li>
+                        <li class="become-partner-btn button-blue"><a href="global-relations/index.html" ><i class="fa fa-globe" aria-hidden="true"></i>Global Relations</a></li>
+                        <li class="become-partner-btn"><a href="https://www.mastersofterp.com/become-a-partner/" target="_blank"><i class="fa fa-handshake-o" aria-hidden="true"></i> Become a Partner</a></li><li class="become-partner-btn button-blue"><a href="digital-marketing-service/index.html" target="_blank"><i class="fa fa-bullhorn" aria-hidden="true"></i>Digital Marketing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/mastersoft-logo.png" alt="MasterSoft" /></a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <nav id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><span></span>Company</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="aboutus.html">About Us</a></li>
+                                    <li><a href="clientlist.html">Customers</a></li>
+                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                    <li><a href="certificate.html">Certifications</a></li>
+                                    <li><a href="careers.html">Careers</a></li>
+                                    <li><a href="minitiative.html">M-Initiative</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span></span>Products</a>
+                             <ul class="dropdown-menu">
+                                   
+                                <li><a href="products/rfcampus/index.html" title="A Cloud / Web-Based E-Governance ERP For Educational Campuses">RF-Campus</a></li>
+                                <li><a href="products/centralized-campus-management-system/index.html" title="Centralized College Management System">CCMS</a></li>
+                                <li><a href="products/rf-lib-man/index.html" title="Library Management System">RFID-Library</a></li>
+                                <li><a href="products/student-information-system-sis/index.html" title="Student Information System">Student Information System (SIS)</a></li>
+                                <li><a href="products/university-administration-and-information-management-system/index.html" title="University Administration & Information Management System">UAIMS</a></li>
+                                <!--<li><a href="/products/school-management-system/" title="School Management System">RF-School</a></li>-->
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span></span>Education ERP</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu"><a href="higher-education-erp/index.html">Higher Education ERP</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="college-erp/index.html">College ERP</a></li>
+                                        <li><a href="university-erp/index.html">University ERP</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="school-erp/index.html">School ERP</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span></span>Special Features</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="rfid-based-attendance-system/index.html">Biometric &amp; RFID Attendance</a></li>
+                                <li><a href="library-management-system/index.html">Library Management</a></li>
+                                <li><a href="hr-management-software/index.html">HR Management</a></li>
+                                <li><a href="mobile-apps-for-educational-institutions/index.html">Mobile Application</a></li>
+                                <li><a href="choicebasedcreditsystem.html">Choice Based Credit System</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span></span>Insights</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="blog/index.html">Blogs</a></li>
+                                <li><a href="event-list.html">Events & Updates</a></li>
+                                <li><a href="media.html">Media</a></li>
+                                <li><a href="video.html">Videos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <form method="post" action="https://www.iitms.co.in/feedback.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="4RweXoMUv/E6eir/qZYHI+kCddiTtqFNYch6wA+dTYqb1W3DrkDoXM/l8JgpfGDDLQridVlV6Eqrx4oLnx/7CN3IEM8dt2qQFmfb/I9i8iw=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResource70d7.js?d=pynGkmcFUV13He1Qd6_TZA6wCU-oTq8P2UWbvmDCNrzJ_LWoT1zHPdgXz1kNJ7Q0csOHdmCqfcmokf9-LqzF6A2&amp;t=636427218960000000" type="text/javascript"></script>
+
+
+<script src="ScriptResource385f.js?d=nv7asgRUU0tRmHNR2D6t1I1VZ6vciNJJIRyppyBrLwA3qBBPjPKR434VdY7xtxQr4oLBMXUE15nDK8pEGE4Q0HAvz3PTJ244vrPbVfFp-kz0MPfsvLaaw6R897lNsxdJCbh9b304mQyZnXHCuTuOzw2&amp;t=548dd326" type="text/javascript"></script>
+<script src="ScriptResourcef05e.js?d=D9drwtSJ4hBA6O8UhT6CQuUkVxaRzKpRp7nM7rr8PpfHj34sP1PgX7idYXh3-g0h6ZdpRdcL2xDSev0LIuJ4zeJU9pSNdypxYNrlEoG_URPLM_HdyY48LSyDSHXe9so3c2WGLlWB6hdTihxdnF1qv_vl968JM96KVe57A-AZ9II1&amp;t=72fc8ae3" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="ScriptResource30b2.js?d=JnUc-DEDOM5KzzVKtsL1tU9dbrdl-cBYvpn2YWmt075aWos5dIhY_wsVwq8lEDnimMlppj0uCJYw1qFolc3_riyowGmoFWivnxjFnaEG2MkiWROgsm7TeQZo7fbNtpBv0_n-ntZkJin78GOliEEIl_OCkeeXVm2pSiUafEdjax8ltCcHGo2DxA_2FK2_h8Yf0&amp;t=72fc8ae3" type="text/javascript"></script>
+<script src="ScriptResourcea8a2.axd?d=8HBMVpJM49mm80uR-ggjY1cuVQxQJFOj3wGFNN8UdMKlAZGoGZp6AUqD-J3U7KMeScwFAQh_906qTeEjSIRyjzyJDnkFyU48mCs8K2zimXSCHfA5A0A7dj14jeYl8oTr5F52y1ucu3zfQ0UrHYUxLw2&amp;t=ffffffff9b7d03cf" type="text/javascript"></script>
+<script src="ScriptResource3f91.axd?d=8CjII1v0OLoMNKf5zGXmeryzbpGVxz9lQYa-EsruvLQJRhUNKt9D_D7gNGEVXw2ICeergjd47jrFavhhIu7dBVr2mVnPu_9zWiGaMrueo3uZStKTFr8jGI5jq0tOgJfK_xguUYrzJ_paSdJ57xZuu5fVju5nXi7mFwkjQmYvfJk1&amp;t=ffffffff9b7d03cf" type="text/javascript"></script>
+<script src="ScriptResourcec246.axd?d=qvCoZ0-bwwVA_pMW6B-GO8DNkOn1TTXOYfKJ-7C5QNCNrtg1rcwCcQj1gPimEMxj3IPe8JT38pygfVaw9e53ru4IfVRbl_j5fLqK-j2mW_YtGXYItR5nUfdo2K25yNydqI0VnFb_Pz0h6Lm6qIVQzFoE7EimWnxw1ZbMppzoIVfXkuPFVCk_YJJj3FV_yaYh0&amp;t=ffffffff9b7d03cf" type="text/javascript"></script>
+<script src="WebResource09b1.axd?d=JoBkLzP19aTuxbWOhHobYiNGd7IaTXw1Y74nPHC8931JcRw7IQuTsjc38dz0l0okGS2odhgjOCv1AXB4stoBHg2&amp;t=636427218960000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="96C56D28" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="5nwLdrtyBQZu9YzcNP5BiyUJ7eBPZCHeLU7lcMsR+8PcAsf5EgDHtaJv5vQlNZ4Z/YrqBEMrAD0aQEqAQ7dx49EeV1UcSXq+9WHDlv2EoSiitZ95jQhjKlDDUTfphSA7A+eisB9aKcuu7JiZUWOhqDEwJXAjGSmnWohujQ6KTckwr+6tOVS0EuXYbdxrTQdADopceMDL2k+Hu22orR0lupNBT7YFORlY/5iihddfDOWceajhWSkXr1aBiW5JIuUqO+KvJaW4sMS9PYjYsw89HzvezOu5QfulI5Ce2R6EQQV5Gzci9SSP5aFOcsTgsjSPPt25jsUTf1i1mxxau/zpf9NUimDT43OuBoPp6BRrcuyHLKSKQFeuypfKf+BfqS7oC+mOR3M4sCkFa89RWAFOB/ZZILwu4bBEMwzmjJrkeM7/GGFxKQPBzFoh0EAY0yow" />
+</div>
+       <div>
+            
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ScriptManager_Main', 'form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="main-wrapper" class="feedback-page">
+        <script type="text/javascript">
+            RunThisAfterEachAsyncPostback();
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(RunThisAfterEachAsyncPostback);
+        </script>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="text-center">Feedback</h1>
+                    <div class="text-center margin-btm-15">
+                        <img src="Images/feedback-msg.png" />
+                    </div>
+                </div>                
+                <div class="form">
+                    <div class="col-md-12 margin-btm-15">
+                    
+                </div>
+                <div class="col-md-12 margin-btm-15">
+                    
+                </div>
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="required">Institute Name</label>
+                                    <input name="ctl00$ContentPlaceHolder1$TextBox_InstituteName" type="text" maxlength="100" id="ContentPlaceHolder1_TextBox_InstituteName" class="form-control" />
+                                    <span id="ContentPlaceHolder1_rfv_InstituteName" class="error" style="display:none;">Please enter institute name</span>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="required">Name of the Person</label>
+                                    <input name="ctl00$ContentPlaceHolder1$Textbox_Name" type="text" maxlength="100" id="ContentPlaceHolder1_Textbox_Name" class="form-control" />
+                                    <span id="ContentPlaceHolder1_rfv_Name" class="error" style="display:none;">Please enter your name</span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="required">E-mail Id</label>
+                                    <input name="ctl00$ContentPlaceHolder1$Textbox_EmailID" type="text" maxlength="100" id="ContentPlaceHolder1_Textbox_EmailID" class="form-control" />
+                                    <span id="ContentPlaceHolder1_rfv_Emailid" class="error" style="display:none;">Please enter e-mail Id </span>
+                                    <span id="ContentPlaceHolder1_regFieldValidator_EmailAddress" class="error" style="display:none;">Please enter valid E-mail address.</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="required">Contact Number</label>
+                                    <input name="ctl00$ContentPlaceHolder1$Textbox_MobileNo" type="text" id="ContentPlaceHolder1_Textbox_MobileNo" class="form-control" onblur="Count(this.id);" onkeypress="return isNumber(event)" />
+                                    <span id="ContentPlaceHolder1_lblMsg" class="error"></span>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="required">Products</label>
+                                    <select name="ctl00$ContentPlaceHolder1$ddl_Product" id="ContentPlaceHolder1_ddl_Product" class="form-control" MaxLength="100">
+	<option value="0">Select Products</option>
+	<option value="1">RF-Campus</option>
+	<option value="2">CAIMS</option>
+	<option value="3">Web CAIMS</option>
+	<option value="4">CCMS</option>
+	<option value="5">CMS</option>
+	<option value="6">Attendance</option>
+	<option value="7">Library</option>
+	<option value="8">CSMS</option>
+	<option value="9">Mobile App</option>
+
+</select>
+                                    <span id="ContentPlaceHolder1_RequiredFieldValidator1" class="error" style="display:none;">Please enter products</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label class="required">Feedback</label>
+                                    <textarea name="ctl00$ContentPlaceHolder1$Textbox_Feedback" rows="2" cols="20" id="ContentPlaceHolder1_Textbox_Feedback" class="form-control" placeholder="Upto 500 character.">
+</textarea>
+                                    <span id="ContentPlaceHolder1_rfv_Feedback" class="error" style="display:none;">Please enter feedback message</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <div class="text-center">
+                                        <input type="submit" name="ctl00$ContentPlaceHolder1$Button_Feedback_Submit" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$Button_Feedback_Submit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder1_Button_Feedback_Submit" tabindex="17" class="btn btn-primary" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <script>
+         function isNumber(evt) {
+             evt = (evt) ? evt : window.event;
+             var charCode = (evt.which) ? evt.which : evt.keyCode;
+             if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                 document.getElementById('ContentPlaceHolder1_lblMsg').style.visibility = 'visible';
+                 document.getElementById('ContentPlaceHolder1_lblMsg').innerHTML = "Please enter only numbers.";
+                 // alert("Please enter only Numbers.");
+                 return false;
+             }
+             document.getElementById('ContentPlaceHolder1_lblMsg').style.visibility = 'hidden';
+             return true;
+         }
+
+         //function ValidateNo() {
+         //    var phoneNo = document.getElementById('Textbox_MobileNo');
+
+         //    if (phoneNo.value == "" || phoneNo.value == null) {
+         //        document.getElementById('lblMsg').style.visibility = 'visible';
+         //        document.getElementById('lblMsg').innerHTML = "Please enter contact number.";
+         //        return false;
+         //    }
+         //    if (phoneNo.value.length < 5) {//|| phoneNo.value.length > 10) {
+         //        document.getElementById('lblMsg').style.visibility = 'visible';
+         //        document.getElementById('lblMsg').innerHTML = "Please enter valid contact number.";
+         //        //  alert("Mobile No. is not valid, Please Enter 10 Digit Mobile No.");
+         //        return false;
+         //    }
+
+         //    document.getElementById('lblMsg').style.visibility = 'hidden';
+         //    //alert("Success ");
+         //    return true;
+         //}
+    </script>
+
+    
+
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+    
+
+    <script type="text/javascript">
+        $(document).ready(function ($) {
+            // delegate calls to data-toggle="lightbox"
+            $(document).delegate('*[data-toggle="lightbox"]', 'click', function (event) {
+                event.preventDefault();
+                return $(this).ekkoLightbox({
+                    onShown: function () {
+                        if (window.console) {
+                            return console.log('Checking our the events huh?');
+                        }
+                    },
+                    onNavigate: function (direction, itemIndex) {
+                        if (window.console) {
+                            return console.log('Navigating ' + direction + '. Current item: ' + itemIndex);
+                        }
+                    }
+                });
+            });
+
+            //Programatically call
+            $('#open-image').click(function (e) {
+                e.preventDefault();
+                $(this).ekkoLightbox();
+            });
+            $('#open-youtube').click(function (e) {
+                e.preventDefault();
+                $(this).ekkoLightbox();
+            });
+
+        });
+    </script>
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-PR9VM4"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-PR9VM4');</script>
+    <!-- End Google Tag Manager -->
+    <!--<img src="https://www.linkedin.com/profile/view?authToken=zRgB&authType=name&id=735b9771" />-->
+
+        </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder1_rfv_InstituteName"), document.getElementById("ContentPlaceHolder1_rfv_Name"), document.getElementById("ContentPlaceHolder1_rfv_Emailid"), document.getElementById("ContentPlaceHolder1_regFieldValidator_EmailAddress"), document.getElementById("ContentPlaceHolder1_RequiredFieldValidator1"), document.getElementById("ContentPlaceHolder1_rfv_Feedback"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ContentPlaceHolder1_rfv_InstituteName = document.all ? document.all["ContentPlaceHolder1_rfv_InstituteName"] : document.getElementById("ContentPlaceHolder1_rfv_InstituteName");
+ContentPlaceHolder1_rfv_InstituteName.controltovalidate = "ContentPlaceHolder1_TextBox_InstituteName";
+ContentPlaceHolder1_rfv_InstituteName.focusOnError = "t";
+ContentPlaceHolder1_rfv_InstituteName.errormessage = "Please enter institute name";
+ContentPlaceHolder1_rfv_InstituteName.display = "Dynamic";
+ContentPlaceHolder1_rfv_InstituteName.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_rfv_InstituteName.initialvalue = "";
+var ContentPlaceHolder1_rfv_Name = document.all ? document.all["ContentPlaceHolder1_rfv_Name"] : document.getElementById("ContentPlaceHolder1_rfv_Name");
+ContentPlaceHolder1_rfv_Name.controltovalidate = "ContentPlaceHolder1_Textbox_Name";
+ContentPlaceHolder1_rfv_Name.focusOnError = "t";
+ContentPlaceHolder1_rfv_Name.errormessage = "Please enter your name";
+ContentPlaceHolder1_rfv_Name.display = "Dynamic";
+ContentPlaceHolder1_rfv_Name.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_rfv_Name.initialvalue = "";
+var ContentPlaceHolder1_rfv_Emailid = document.all ? document.all["ContentPlaceHolder1_rfv_Emailid"] : document.getElementById("ContentPlaceHolder1_rfv_Emailid");
+ContentPlaceHolder1_rfv_Emailid.controltovalidate = "ContentPlaceHolder1_Textbox_EmailID";
+ContentPlaceHolder1_rfv_Emailid.focusOnError = "t";
+ContentPlaceHolder1_rfv_Emailid.errormessage = "Please enter e-mail Id ";
+ContentPlaceHolder1_rfv_Emailid.display = "Dynamic";
+ContentPlaceHolder1_rfv_Emailid.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_rfv_Emailid.initialvalue = "";
+var ContentPlaceHolder1_regFieldValidator_EmailAddress = document.all ? document.all["ContentPlaceHolder1_regFieldValidator_EmailAddress"] : document.getElementById("ContentPlaceHolder1_regFieldValidator_EmailAddress");
+ContentPlaceHolder1_regFieldValidator_EmailAddress.controltovalidate = "ContentPlaceHolder1_Textbox_EmailID";
+ContentPlaceHolder1_regFieldValidator_EmailAddress.focusOnError = "t";
+ContentPlaceHolder1_regFieldValidator_EmailAddress.errormessage = "Please enter valid E-mail address.";
+ContentPlaceHolder1_regFieldValidator_EmailAddress.display = "Dynamic";
+ContentPlaceHolder1_regFieldValidator_EmailAddress.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ContentPlaceHolder1_regFieldValidator_EmailAddress.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+var ContentPlaceHolder1_RequiredFieldValidator1 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldValidator1"] : document.getElementById("ContentPlaceHolder1_RequiredFieldValidator1");
+ContentPlaceHolder1_RequiredFieldValidator1.controltovalidate = "ContentPlaceHolder1_ddl_Product";
+ContentPlaceHolder1_RequiredFieldValidator1.focusOnError = "t";
+ContentPlaceHolder1_RequiredFieldValidator1.errormessage = "Please enter products";
+ContentPlaceHolder1_RequiredFieldValidator1.display = "Dynamic";
+ContentPlaceHolder1_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_RequiredFieldValidator1.initialvalue = "0";
+var ContentPlaceHolder1_rfv_Feedback = document.all ? document.all["ContentPlaceHolder1_rfv_Feedback"] : document.getElementById("ContentPlaceHolder1_rfv_Feedback");
+ContentPlaceHolder1_rfv_Feedback.controltovalidate = "ContentPlaceHolder1_Textbox_Feedback";
+ContentPlaceHolder1_rfv_Feedback.focusOnError = "t";
+ContentPlaceHolder1_rfv_Feedback.errormessage = "Please enter feedback message";
+ContentPlaceHolder1_rfv_Feedback.display = "Dynamic";
+ContentPlaceHolder1_rfv_Feedback.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_rfv_Feedback.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        WebForm_AutoFocus('ContentPlaceHolder1_TextBox_InstituteName');
+document.getElementById('ContentPlaceHolder1_rfv_InstituteName').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_rfv_InstituteName'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"ValidChars":"QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm ","id":"ContentPlaceHolder1_fte_InstituteName"}, null, null, $get("ContentPlaceHolder1_TextBox_InstituteName"));
+});
+
+document.getElementById('ContentPlaceHolder1_rfv_Name').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_rfv_Name'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"ValidChars":"QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm ","id":"ContentPlaceHolder1_fte_Name"}, null, null, $get("ContentPlaceHolder1_Textbox_Name"));
+});
+
+document.getElementById('ContentPlaceHolder1_rfv_Emailid').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_rfv_Emailid'));
+}
+
+document.getElementById('ContentPlaceHolder1_regFieldValidator_EmailAddress').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_regFieldValidator_EmailAddress'));
+}
+
+document.getElementById('ContentPlaceHolder1_RequiredFieldValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_RequiredFieldValidator1'));
+}
+
+document.getElementById('ContentPlaceHolder1_rfv_Feedback').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_rfv_Feedback'));
+}
+//]]>
+</script>
+</form>
+    <!--live chat-->
+    <!--Add the following script at the bottom of the web page (before </body></html>)-->
+    <script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=59890988"></script>
+    <script type="text/javascript" defer src="https://mylivechat.com/chatinline.aspx?hccid=59890988"></script>
+    <script>
+        function myFunction() {
+            var person = prompt("Please enter your name", "Harry Potter");
+
+            if (person != null) {
+                document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+            }
+        }
+    </script>
+
+    <!--live chat end-->
+
+
+
+    <!-- InstanceEndEditable -->
+    <div class="company-counters text-center">
+        <div class="container">
+            <div class="row">
+                <div class="getTouch">
+                    <h2><span>Ready to get started?</span></h2>
+                    <iframe id="Iframe2" src="homecontactus.html" style="width: 100%; border: 0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footerlogo-div">
+                        <a href="index.html">
+                            <img src="images/footer-logo.png" alt="MasterSoft" /></a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/CampusManagementSolutions/" target="_blank" class="fb-icon social-icon"><i class="fa-facebook fa"></i></a>
+                        <a href="https://www.linkedin.com/company/master%27s-software" target="_blank" class="link-icon social-icon"><i class="fa-linkedin fa"></i></a>
+                        <a href="https://twitter.com/MastersoftErp" target="_blank" class="twitter-icon social-icon"><i class="fa-twitter fa"></i></a>
+                        <a href="https://www.youtube.com/results?search_query=mastersoft+erp" target="_blank" class="youtube-icon social-icon"><i class="fa-youtube fa"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-6">
+                    <p><i class="fa fa-envelope"></i>E-mail: <a href="mailto:sales@iitms.co.in">sales@iitms.co.in</a></p>
+                    <p><i class="fa fa-phone"></i>EPBX: 0712-2713705 / 06 / 07, 2710900, 2710909</p>
+                    <p><i class="fa fa-phone"></i>Phone (Marketing): +91-712-2713714</p><p><i class="fa fa-phone"></i>Phone (HR): +91-7770012749</p>
+                    <p><i class="fa-inbox fa"></i>Fax: +91-712-2713710</p>
+                    <p><i class="fa fa-map-marker"></i>Address: 1456-A, Opp. Pandav Polytechnic College, New Nandanvan, Nagpur-440009 (MS) India</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <ul>
+                                <li><a href="http://sandesh.mastersofterp.in/" target="_blank">Sandesh Portal</a></li>
+                                <li><a href="http://atcovation.in/" target="_blank">Atcovation</a></li>
+                                <li><a href="http://www.feepayr.com/" target="_blank">Feepayr</a></li>
+                                <li><a href="http://www.universityonlineadmission.com/" target="_blank">University Online Admission</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <ul>
+                                <li><a href="careers.html">Careers</a></li>
+                                <li><a href="downloadenquiry.html">Enquiry</a></li>
+                                <li><a href="feedback.html">Feedback</a></li>
+                                <li><a href="http://pms.mastersofterp.in/" target="_blank">Partner Login</a></li>
+                                <li><a href="http://cloud.mastersofterp.in/" target="_blank">Client login</a></li><li><a href="events/mastersoft-knowledge-series.html" target="_blank">Upcoming events</a></li>
+                                <li><a href="DemoDisplay.html" target="_blank">Client visit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright" class="text-center">
+        <div class="container">
+            <div class="row">&copy; 2018 MasterSoft™. All Rights Reserved </div>
+        </div>
+    </div>
+
+    <!--Get in Touch PopUp-->
+    <div class="get-in-touch" style="display:none">
+        <h2><a href="#">Request Free Demo</a></h2>
+    </div>
+    <div class="getpopup">
+        <a href="#" class="close-pop"></a>
+        <iframe src="homecontactusdemo.html" id="iFrame1" class="iframe1" style="height: 450px; width: 100%; border: none;"></iframe>
+    </div>
+    <div class="getoverlay"></div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-PR9VM4"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //$(".getpopup").css({ "left": "25%", "top": "6%" });
+            //$(".getoverlay").css({ "opacity": "1", "display": "block", "right": "0" });
+            $(".get-in-touch a").click(function () {
+                $(".getpopup").css({ "left": "50%", "top": "50%" });
+                $(".getoverlay").css({ "opacity": "1", "display": "block", "right": "0" });
+                responsive: true
+            })
+            $(".getpopup a.close-pop").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(".getoverlay").removeAttr('style');
+            });
+            $(".getoverlay").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(this).removeAttr('style');
+            });
+
+        });
+        if ($(window).width() < 768) {
+            $(".get-in-touch a").click(function () {
+                $(".getpopup").css({ "left": "50%", "top": "50%", "width": "95%" });
+                $(".getoverlay").css({ "opacity": "1", "display": "block", "right": "0" });
+                responsive: true
+            })
+            $(".getpopup a.close-pop").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(".getoverlay").removeAttr('style');
+            });
+            $(".getoverlay").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(this).removeAttr('style');
+            });
+        } else {
+            $(".get-in-touch a").click(function () {
+                $(".getpopup").css({ "left": "50%", "top": "50%" });
+                $(".getoverlay").css({ "opacity": "1", "display": "block", "right": "0" });
+                responsive: true
+            })
+            $(".getpopup a.close-pop").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(".getoverlay").removeAttr('style');
+            });
+            $(".getoverlay").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(this).removeAttr('style');
+            });
+        }
+    </script>
+    <!--live chat-->
+    <!--Add the following script at the bottom of the web page (before </body></html>)-->
+    
+
+    <!--live chat end-->
+    <script src="js/bootstrap-3.3.7.min.js"></script>
+    <script src="js/gallery/script.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-73683529-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script async src='../www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+
+
+
+    
+
+    
+    
+    
+
+
+    <!-- Google Tag Manager -->
+
+
+
+
+</body>
+
+<!-- Mirrored from www.iitms.co.in/feedback.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Mar 2020 17:29:20 GMT -->
+</html>

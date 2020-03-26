@@ -1,0 +1,656 @@
+<!DOCTYPE HTML>
+<html>
+<!-- InstanceBegin template="/Templates/master.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<!-- Mirrored from www.iitms.co.in/products/rf-lib-man/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Mar 2020 17:20:47 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="p:domain_verify" content="aa560a11f36bae1053650f0585a463af" />
+    <link rel="shortcut icon" href="../../error/404error.html">
+    <meta name="author" content="MasterSoft">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <meta name="description" content='RFID enabled library automation software is a web based fully integrated, user friendly, multi-user package for computerization of all the in-house operations of the Library.' />
+    <meta name="keywords" content="e-Governance ERP For Educational Institutions, Educational campuses, online management software, admission management software" />
+    <link rel="canonical" href="../../library-management-system/index.html" />
+    <meta name="author" content="">
+    <meta name="p:domain_verify" content="aa560a11f36bae1053650f0585a463af" />
+    <link rel="icon" href="../../images/logo%20and%20icon/MS_favicon-2.ico">
+    <title>RF LIB-MAN: Library Software | Library Automation Software | MasterSoft</title>
+    <!-- InstanceEndEditable -->
+    <!--Second menu tab code    end-->
+    <link href="../../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="../../css/style.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script>
+        (function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-PR9VM4');</script>
+    <!-- End Google Tag Manager -->
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head>
+<body>
+    <header class="navbar navbar-default" role="navigation">
+        <div class="top-links">
+            <div class="container">
+                <div class="row">
+                    <ul>
+                        <li><a href="../../downloadenquiry.html">Product Enquiry</a></li>
+                        <!--<li><a href="/feedback.aspx">Feedback</a></li>-->
+                        <li><a href="http://cloud.mastersofterp.in/" target="_blank">MasterSoft Cloud Login</a></li>
+                        <li class="become-partner-btn button-blue"><a href="../../global-relations/index.html" ><i class="fa fa-globe" aria-hidden="true"></i>Global Relations</a></li>
+                           <li class="become-partner-btn"><a href="https://www.mastersofterp.com/become-a-partner/" target="_blank"><i class="fa fa-handshake-o" aria-hidden="true"></i> Become a Partner</a></li><li class="become-partner-btn button-blue"><a href="../../digital-marketing-service/index.html" target="_blank"><i class="fa fa-bullhorn" aria-hidden="true"></i>Digital Marketing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../../index.html">
+                        <img src="../../images/mastersoft-logo.png" alt="MasterSoft" /></a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <nav id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><span></span>Company</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="../../aboutus.html">About Us</a></li>
+                                    <li><a href="../../clientlist.html">Customers</a></li>
+                                    <li><a href="../../testimonials.html">Testimonials</a></li>
+                                    <li><a href="../../certificate.html">Certifications</a></li>
+                                    <li><a href="../../careers.html">Careers</a></li>
+                                    <li><a href="../../minitiative.html">M-Initiative</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown active"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span></span>Products</a>
+                             <ul class="dropdown-menu">
+                                  <!--   <li><a href="/products/naac-accreditation/">NAAC Accreditation</a></li>-->
+                                <li><a href="../rfcampus/index.html" title="A Cloud / Web-Based E-Governance ERP For Educational Campuses">RF-Campus</a></li>
+                                <li><a href="../centralized-campus-management-system/index.html" title="Centralized College Management System">CCMS</a></li>
+                                <li><a href="index.html" title="Library Management System">RFID-Library</a></li>
+                                <li><a href="../student-information-system-sis/index.html" title="Student Information System">Student Information System (SIS)</a></li>
+                                <li><a href="../university-administration-and-information-management-system/index.html" title="University Administration & Information Management System">UAIMS</a></li>
+                                <!--<li><a href="/products/school-management-system/" title="School Management System">RF-School</a></li>-->
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span></span>Education ERP</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu"><a href="../../higher-education-erp/index.html">Higher Education ERP</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../../college-erp/index.html">College ERP</a></li>
+                                        <li><a href="../../university-erp/index.html">University ERP</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../../school-erp/index.html">School ERP</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span></span>Special Features</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../rfid-based-attendance-system/index.html">Biometric &amp; RFID Attendance</a></li>
+                                <li><a href="../../library-management-system/index.html">Library Management</a></li>
+                                <li><a href="../../hr-management-software/index.html">HR Management</a></li>
+                                <li><a href="../../mobile-apps-for-educational-institutions/index.html">Mobile Application</a></li>
+                                <li><a href="../../choicebasedcreditsystem.html">Choice Based Credit System</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span></span>Insights</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../blog/index.html">Blogs</a></li>
+                                <li><a href="../../event-list.html">Events & Updates</a></li>
+                                <li><a href="../../media.html">Media</a></li>
+                                <li><a href="../../video.html">Videos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../contactus.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--Start Page-->
+    <div id="main-wrapper">
+        <!-- InstanceBeginEditable name="iitms" -->
+        <div class="container">
+            <div class="row">
+                <div class="clearfix margin-btm-20">
+                    <div class="col-sm-4">
+                        <img src="../img/Rf-Lib-Man-1.jpg" class="img-responsive" alt="RF-Lib-Man" />
+                        <!--<h3 class="text-center margin-btm-20"><a href="/download-brochure.aspx" title="Download" target="_blank" class="btn"><i class="fa-download fa"></i>Download Brochure</a></h3>-->
+                       
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="module-content">
+                            <h1>Library Management System <span></span></h1>
+                            <p>LIB-Man&copy; is a cloud based fully integrated, user friendly, multi-user package, for computerization of all the in-house operations of the Library. This Library Software is powerful, and easy to use. Lib-Man is embedded with Multi-lingual Fonts, Bar Code & QR Code fonts. Lib-Man also have optional UHF RFID integration for automation. It also supports smart phone app for book search.</p>
+                            <h3>LIB-MAN utilities:</h3>
+                            <ul class="bulleted-list">
+                                <li><span>Defining library users & their privileges</span></li>
+                                <li><span>Network backups recovery</span></li>
+                                <li><span>Merging of data like vendor, publisher, author, department etc.</span></li>
+                                <li><span>Address book</span></li>
+                                <li><span>User login details</span></li>
+                                <li><span>Key board setup</span></li>
+                            </ul>
+                             <p class="sub-heading-text btn-download col-md-5"><a href="../../download-brochure.html" target="_blank"><i class="fa fa-download" aria-hidden="true"></i><span>Download Brochure</span></a></p>
+                              <p class="sub-heading-text btn-download col-md-5"><a href="../../request-demo.html" target="_blank"><i class="fa fa-chevron-right" aria-hidden="true"></i><span>Free Product Demo</span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix features">
+                    <div class="col-md-8 col-sm-6">
+                        <h2 class="text-left">RF-Lib-Man features</h2>
+                        <ul class="bulleted-list">
+                            <li><span>100% assurance for import of other library software data to libman.</span></li>
+                            <li><span>Marc standard data import/export.</span></li>
+                            <li><span>Book Data fetching from ISBN site, Google api. saving data entry time.</span></li>
+                            <li><span>Supports e-book uploads reading.</span></li>
+                            <li><span>Supports all latest technologies cloud, smart phone, tablets, SMS, email, bar code, QR code, multi-lingual unicode, UHF RFID, payment gateway.</span></li>
+                            <li><span>Follows all library latest standards such as Marc 21, Library congress standards, AACR 2.</span></li>
+                            <li><span>Fully secured & maintenance free.</span></li>
+                            <li><span>Best on site training & service support.</span></li>
+                            <li><span>Fully documented user manual.</span></li>
+                            <li><span>Best backup & recovery.</span></li>
+                            <li><span>Reports / data export to word, excel, PDF, text...</span></li>
+                            <li><span>No duplication of work, no restrictions & no hidden costs.</span></li>
+                            <li><span>No upper limits on number of documents / journals... entries.</span></li>
+                            <li><span>Reports on laser / inkjet printers.</span></li>
+                            <li><span>User defined privileges.</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <img src="../img/product-features.png" alt="RF-Campus features" />
+                    </div>
+                </div>
+                <div class="modules-container">
+                    <h2>RF-Lib-Man modules</h2>
+                    <div class="modules-content">
+                        <h3>ACQUISITION & CATALOGUING</h3>
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3 col-sm-4 hidden-xs">
+                                <div class="list-group">
+                                    <a href="#q1" class="list-group-item active" data-toggle="tab">FEATURES</a>
+                                    <a href="#q2" class="list-group-item" data-toggle="tab">Reports</a>
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-sm-8">
+                                <div class="tab-content">
+                                    <h4 class="tab-heading active-tab"><a href="#q1" data-toggle="tab">FEATURES</a></h4>
+                                    <div class="tab-pane fade active in" id="q1">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul class="bullet-list">
+                                                    <li><span>Book requisition</span></li>
+                                                    <li><span>Procurement : Vendor quotes, comparative statement, supply order & follow-up.</span></li>
+                                                    <li><span>Invoicing & accessioning</span></li>
+                                                    <li><span>Payment requisitions</span></li>
+                                                    <li><span>Book binding</span></li>
+                                                    <li><span>Withdrawal / write off books</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="bullet-list">
+                                                    <li><span>Loss of books / missing / display</span></li>
+                                                    <li><span>Stock verification - manual, bar / QR code enabled, RFID enabled</span></li>
+                                                    <li><span>Budget utilization analysis</span></li>
+                                                    <li><span>Book indexing</span></li>
+                                                    <li><span>Dissertation / belonging type entry</span></li>
+                                                    <li><span>Department-wise transfer of books</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="tab-heading"><a href="#q2" data-toggle="tab">Reports</a></h4>
+                                    <div class="tab-pane fade" id="q2">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul class="bullet-list">
+                                                    <li><span>Accession register</span></li>
+                                                    <li><span>AACR2 catalogue according to - subject,  author, title</span></li>
+                                                    <li><span>Documents purchase analysis</span></li>
+                                                    <li><span>Bar code, QR code & spine labels</span></li>
+                                                    <li><span>Invoice / bill register</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="bullet-list">
+                                                    <li><span>Circulation of reference books</span></li>
+                                                    <li><span>New arrivals</span></li>
+                                                    <li><span>Selected field reports</span></li>
+                                                    <li><span>Vendor / publisher mailing list</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="pull-right"><a href="../../download-brochure.html">Download brochures for more details</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modules-content">
+                        <h3>CIRCULATION</h3>
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3 col-sm-4 hidden-xs">
+                                <div class="list-group">
+                                    <a href="#q3" class="list-group-item active" data-toggle="tab">FEATURES</a>
+                                    <a href="#q4" class="list-group-item" data-toggle="tab">Reports</a>
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-sm-8">
+                                <div class="tab-content">
+                                    <h4 class="tab-heading active-tab"><a href="#q3" data-toggle="tab">FEATURES</a></h4>
+                                    <div class="tab-pane fade active in" id="q3">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul class="bullet-list">
+                                                    <li><span>B. T. / I. D. / Smart ID card printing</span></li>
+                                                    <li><span>Biometric for borrower identification</span></li>
+                                                    <li><span>Document circulation - issue, return & renewals</span></li>
+                                                    <li><span>Reference book issue return</span></li>
+                                                    <li><span>Reservation / claims</span></li>
+                                                    <li><span>Overdue / recall notices</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="bullet-list">
+                                                    <li><span>Holidays</span></li>
+                                                    <li><span>Due date reminder via SMS & email</span></li>
+                                                    <li><span>Clearance notices</span></li>
+                                                    <li><span>Book bank</span></li>
+                                                    <li><span>Fine management</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="tab-heading"><a href="#q4" data-toggle="tab">Reports</a></h4>
+                                    <div class="tab-pane fade" id="q4">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul class="bullet-list">
+                                                    <li><span>BT & document utilization history</span></li>
+                                                    <li><span>Circulation register</span></li>
+                                                    <li><span>Documents utilization analysis</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="bullet-list">
+                                                    <li><span>Email, SMS, notices to borrower</span></li>
+                                                    <li><span>Claim report late fee reports</span></li>
+                                                    <li><span>Issue book reports</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="pull-right"><a href="../../download-brochure.html">Download brochures for more details</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="sub-heading-text"><a href="../../blog/automate-library-with-industry-best-library-management-software.html" target="_blank"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i><span>Read more - LIB-MAN: Automate Library With Industry Best Library Management Software <i class="fa fa-angle-double-right" aria-hidden="true"></i></span></a></p>
+                    <div class="modules-content">
+                        <h3>OPAC - ON-LINE PUBLIC ACCESS CATALOGUE</h3>
+                        <p>Information about documents can be searched using powerful search engine according to:</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul class="bullet-list">
+                                    <li><span>Title</span></li>
+                                    <li><span>Accession No.</span></li>
+                                    <li><span>Author</span></li>
+                                    <li><span>Co-author</span></li>
+                                    <li><span>Subject</span></li>
+                                    <li><span>Publisher</span></li>
+                                    <li><span>Class No.</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="bullet-list">
+                                    <li><span>ISBN No.</span></li>
+                                    <li><span>Publication year / place</span></li>
+                                    <li><span>Word in a title</span></li>
+                                    <li><span>Combinational</span></li>
+                                    <li><span>Editor</span></li>
+                                    <li><span>Translated books</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="bullet-list">
+                                    <li><span>Type of document</span></li>
+                                    <li><span>Dissertation / thesis search</span></li>
+                                    <li><span>Claims / reservation of books</span></li>
+                                    <li><span>Belonging search</span></li>
+                                    <li><span>Keyword search</span></li>
+                                    <li><span>Search can be multilingual</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modules-content">
+                        <h3>SERIAL CONTROL</h3>
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3 col-sm-4 hidden-xs">
+                                <div class="list-group">
+                                    <a href="#q5" class="list-group-item active" data-toggle="tab">FEATURES</a>
+                                    <a href="#q6" class="list-group-item" data-toggle="tab">Reports</a>
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-sm-8">
+                                <div class="tab-content">
+                                    <h4 class="tab-heading active-tab"><a href="#q5" data-toggle="tab">FEATURES</a></h4>
+                                    <div class="tab-pane fade active in" id="q5">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul class="bullet-list">
+                                                    <li><span>New/renewal of subscription order</span></li>
+                                                    <li><span>Reminders for non-receipts</span></li>
+                                                    <li><span>Binding of serials & accessioning</span></li>
+                                                    <li><span>Serial OPAC</span></li>
+                                                    <li><span>Daily newspaper entry</span></li>
+                                                    <li><span>Paper cutting storage</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="bullet-list">
+                                                    <li><span>Payment notice</span></li>
+                                                    <li><span>Serial indexing & serial OPAC</span></li>
+                                                    <li><span>Bound volume creation</span></li>
+                                                    <li><span>Journal binding</span></li>
+                                                    <li><span>Journal issue return</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="tab-heading"><a href="#q6" data-toggle="tab">Reports</a></h4>
+                                    <div class="tab-pane fade" id="q6">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul class="bullet-list">
+                                                    <li><span>Binder orders</span></li>
+                                                    <li><span>Serial accession register</span></li>
+                                                    <li><span>Current arrivals</span></li>
+                                                    <li><span>Budget analysis</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="bullet-list">
+                                                    <li><span>Expected periodicals</span></li>
+                                                    <li><span>Bound vol record</span></li>
+                                                    <li><span>Monthly bill of newspaper(s)</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="pull-right"><a href="../../download-brochure.html">Download brochures for more details</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modules-content">
+                        <h3>OPAC - ON-LINE PUBLIC ACCESS CATALOGUE</h3>
+                        <p>Information about documents can be searched using powerful search engine according to:</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul class="bullet-list">
+                                    <li><span>Utilization of documents, most utilized documents, least utilized documents</span></li>
+                                    <li><span>Budget analysis</span></li>
+                                    <li><span>Claims analysis</span></li>
+                                    <li><span>Lost / missing / withdrawal analysis</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="bullet-list">
+                                    <li><span>Yearly statistical graphical reports</span></li>
+                                    <li><span>Year-wise purchase</span></li>
+                                    <li><span>Title-wise copy in department</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="bullet-list">
+                                    <li><span>Yearly departmental investment</span></li>
+                                    <li><span>Summary of documents - in bindery, present, issued, lost & written-off</span></li>
+                                    <li><span>Various statistical/graphical MIS reports</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>UHF RFID library management system</h2>
+                    <div class="clearfix margin-btm-40">
+                        <div class="col-sm-4">
+                            <img src="../img/rfid-t-lib.jpg" alt="RFID TECHNOLOGY" /><br />
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="module-content">
+                                <h2 class="heading2">RFID Technology:</h2>
+                                <p>RFID means Radio Frequency Identification. RFID technology provides wireless identification of people, books or assets. RFID Tag is made up of an integrated antenna and memory.</p>
+                                <p>In Library, a RFID tag is attached to each Book and Accession No. of the book is stored in Tag memory. An RFID Reader reads this Accession no. and sends to library software.</p>
+                                <p>UHF – Ultra High Frequency Technology is most advanced technology with very high read range of 1-3 meters as compare to old HF and LF – technologies where read range in few Centimeters.  UHF is low cost, high multi read, highly accurate with minimum mis-read. Therefore, UHF RFID technology preferred by us.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix margin-btm-40">
+                        <div class="col-sm-4">
+                            <img src="../img/tagging-of-books.jpg" alt="Tagging of Books" /><br />
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="module-content">
+                                <h2 class="heading2">Tagging of Books:</h2>
+                                <p>RFID Tag is pasted on inner side of Front cover page of book & full page. Sticker is attached on it to hide it from patron and tagging is done using RFID reader. Tagging means writing RFID tag EPC code to Library Management Software & writing accession number to tag memory. With this now book is ready for all RFID operations. Patrons are issued UHF RFID ID cards.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix margin-btm-40">
+                        <div class="col-sm-4">
+                            <img src="../img/self-check-KIOSK.jpg" alt="Self check KIOSK" /><br />
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="module-content">
+                                <h2 class="heading2">Self check KIOSK:</h2>
+                                <p>This offers facility of self- automated issue – return (Check In / out) of books to patrons.</p>
+                                <p><strong>Self Issue: </strong>Patron shows his RFID ID card to reader in Kiosk for automatic login. Now he puts books to be issued on RFID reader for issue. Books are issued to patron. RFID tag status is now quit & patron can take away the books through Security system at library exit gate without any theft alarm.</p>
+                                <p><strong>Self Return: </strong>For self return of books, patron just keeps the books on reader of Kiosk & the books are returned and patron loan is canceled.</p>
+                                <p>While issue or return receipt is printed and SMS is sent to patron.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix margin-btm-40">
+                        <div class="col-sm-4">
+                            <img src="../img/shelf-management.jpg" alt="Shelf Management" /><br />
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="module-content">
+                                <h2 class="heading2">Shelf Management:</h2>
+                                <p>The Shelf management system consist of mobile RFID reader integrated with library software. This facilitates almost instant searching of a desired book in Library & very fast library books verification (stock verification) without line of sight. The long read range of 3 meters makes stock verification & book searching a easy task.</p>
+                                <p>For stock verification press scan button of Reader & move the reader across the shelves. Reader - gathers all the unique accession no. of books in the physical range of 1 meter. The collected accession nos. are transferred to Library Software & stock verification report is generated. It verifies 1,00,000 books per day.</p>
+                                <p>For searching of a book, enter accession no. to searched in reader & sweep across shelves for searching. When a book is near by reader, a built-in beeper sounds to alert the librarians.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix margin-btm-40">
+                        <div class="col-sm-4">
+                            <img src="../img/anti-theft-detection.jpg" alt="Anti Theft detection" /><br />
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="module-content">
+                                <h2 class="heading2">Anti Theft detection:</h2>
+                                <p>The RFID Anti Theft Portals (Security system) are placed at exit gate of library & portal tracks books up-to 3 meters and would trigger the alarm with red flash lights when patron passes through gate with an un-issued books.  It can detect multiple items at a time. This is most accurate security system with minimum false alarm.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="col-sm-4">
+                            <img src="../img/book-drop-stations.jpg" alt="Book Drop stations" /><br />
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="module-content">
+                                <h2 class="heading2">Book Drop stations:</h2>
+                                <p>Patron can return Books any time - 24 x 7 - in RFID enabled Book Drop stations which are normally kept outside Library. Patron's loan is immediately canceled and SMS is sent to him. A Book return slip is printed & a beep is sounded, green light glows on successful book return.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- InstanceEndEditable -->
+        <div class="company-counters text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="getTouch">
+                        <h2><span>Ready to get started?</span></h2>
+                        <iframe id="Iframe2" src="../../homecontactus.html" style="width: 100%; border: 0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Page-->
+    <div id="footer" class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footerlogo-div">
+                        <a href="../../index.html">
+                            <img src="../../images/footer-logo.png" alt="MasterSoft" /></a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/CampusManagementSolutions/" target="_blank" class="fb-icon social-icon"><i class="fa-facebook fa"></i></a>
+                        <a href="https://www.linkedin.com/company/master%27s-software" target="_blank" class="link-icon social-icon"><i class="fa-linkedin fa"></i></a>
+                        <a href="https://twitter.com/MastersoftErp" target="_blank" class="twitter-icon social-icon"><i class="fa-twitter fa"></i></a>
+                        <a href="https://www.youtube.com/results?search_query=mastersoft+erp" target="_blank" class="youtube-icon social-icon"><i class="fa-youtube fa"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-6">
+                    <p><i class="fa fa-envelope"></i>E-mail: <a href="mailto:sales@iitms.co.in">sales@iitms.co.in</a></p>
+                    <p><i class="fa fa-phone"></i>EPBX: 0712-2713705 / 06 / 07, 2710900, 2710909</p>
+                    <p><i class="fa fa-phone"></i>Phone (Marketing): +91-712-2713714</p><p><i class="fa fa-phone"></i>Phone (HR): +91-7770012749</p>
+                    <p><i class="fa-inbox fa"></i>Fax: +91-712-2713710</p>
+                    <p><i class="fa fa-map-marker"></i>Address: 1456-A, Opp. Pandav Polytechnic College, New Nandanvan, Nagpur-440009 (MS) India</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <ul>
+                                <li><a href="http://sandesh.mastersofterp.in/" target="_blank">Sandesh Portal</a></li>
+                                <li><a href="http://atcovation.in/" target="_blank">Atcovation</a></li>
+                                <li><a href="http://www.feepayr.com/" target="_blank">Feepayr</a></li>
+                                <li><a href="http://www.universityonlineadmission.com/" target="_blank">University Online Admission</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <ul>
+                                <li><a href="../../careers.html">Careers</a></li>
+                                <li><a href="../../downloadenquiry.html">Enquiry</a></li>
+                                <li><a href="../../feedback.html">Feedback</a></li>
+                                <li><a href="http://pms.mastersofterp.in/" target="_blank">Partner Login</a></li>
+                                <li><a href="http://cloud.mastersofterp.in/" target="_blank">Client login</a></li><li><a href="../../events/mastersoft-knowledge-series.html" target="_blank">Upcoming events</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright" class="text-center">
+        <div class="container">
+            <div class="row">&copy; 2018 MasterSoft™. All Rights Reserved </div>
+        </div>
+    </div>
+
+    <!--Get in Touch PopUp-->
+    <div class="get-in-touch">
+        <h2><a href="#">Request Free Demo</a></h2>
+    </div>
+    <div class="getpopup">
+        <a href="#" class="close-pop"></a>
+        <iframe src="../../homecontactusdemo.html" id="iFrame1" class="iframe1" style="height: 450px; width: 100%; border: none;"></iframe>
+    </div>
+    <div class="getoverlay"></div>
+    <!--live chat-->
+    <!--Add the following script at the bottom of the web page (before </body></html>)-->
+    <script type="text/javascript" async defer data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=59890988"></script>
+    <script type="text/javascript" defer src="https://mylivechat.com/chatinline.aspx?hccid=59890988"></script>
+    <script>
+        function myFunction() {
+            var person = prompt("Please enter your name", "Harry Potter");
+
+            if (person != null) {
+                document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+            }
+        }
+    </script>
+
+    <!--live chat end-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-73683529-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script async src='../../../www.google-analytics.com/analytics.js'></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/fastclick.js"></script>
+    <script src="../../js/scroll.js"></script>
+    <script src="../../js/gallery/count-to.js" defer></script>
+    <script src="../../js/gallery/header.js"></script>
+    <script src="../../js/gallery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../../js/gallery/jquery.appear.js"></script>
+    <script src="../../js/gallery/jquery.easypiechart.min.js"></script>
+    <script src="../../js/gallery/jquery.isotope.js"></script>
+    <script src="../../js/gallery/jquery.isotope.min.js"></script>
+    <script src="../../js/gallery/script.js"></script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-PR9VM4"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--<img src="https://www.linkedin.com/profile/view?authToken=zRgB&authType=name&id=735b9771" />-->
+
+</body>
+<!-- InstanceEnd -->
+
+<!-- Mirrored from www.iitms.co.in/products/rf-lib-man/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Mar 2020 17:21:00 GMT -->
+</html>

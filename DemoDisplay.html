@@ -1,0 +1,638 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<!-- Mirrored from www.iitms.co.in/DemoDisplay.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Mar 2020 17:29:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head id="Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"5a4af856b9","applicationID":"265551880","transactionName":"YVQAbBRSV0sHUBZbX1geI2s2HF1dC1wGW0NGXQNBSFJKSB4=","queueTime":0,"applicationTime":120,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"5a4af856b9",applicationID:"265551880"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /><meta name="description" content="MasterSoft is one of the most trusted brand in providing highly reliable education ERP Software. Also, MasterSoft is excellent at Online examination system, school, college and university management system" /><meta name="keywords" content="university management system, university erp softwares / system, college management system, education software company, erp for education system, mastersoft nagpur, mastersoft, software company in nagpur, erp services" /><meta name="author" /><meta name="p:domain_verify" content="aa560a11f36bae1053650f0585a463af" /><link rel="shortcut icon" href="Images/logo%20and%20icon/MS_favicon.ico" /><title>
+	MasterSoft - Education ERP India
+</title><link rel="stylesheet" type="text/css" href="Clientgallery/css/layout.css" media="screen" />
+
+    
+
+    
+
+    <!--[if IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css" media="screen" /><![endif]-->
+
+    <!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
+
+    <!-- BEGIN: load jquery -->
+    <script src="dt_table/jquery-1.12.3.js"></script>
+    <script src="Clientgallery/js/jquery-1.8.3.min.js"></script>
+    
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('ul.nav-tabs li').click(function () {
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.nav-tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#" + tab_id).addClass('current');
+            })
+
+        })
+    </script>
+
+
+    <script type="text/javascript">
+
+        $(window).load(function () {
+
+            $('#demo-side-bar').removeAttr('style');
+
+        });
+
+    </script>
+
+    <style type="text/css">
+        #demo-side-bar { left: 90%!important; display: block!important; }
+
+        #branding .floatright { margin-right: 130px!important; }
+    </style>
+    <!--  payal---->
+    
+
+    <!--Second menu tab code    end-->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" /><link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!--smooth scroll-->
+
+    <script>
+
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <!--<script type="text/javascript">
+        $(document).ready(function () {
+            $('ul.nav li.dropdown').hover(function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+            }, function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
+        });
+    </script>-->
+    <!--smooth scroll end-->
+
+    
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-PR9VM4');</script>
+    <!-- End Google Tag Manager -->
+    
+     
+  <script src="../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="navbar navbar-default" role="navigation">
+        <div class="top-links">
+            <div class="container">
+                <div class="row">
+                    <ul>
+                        <li><a href="downloadenquiry.html">Product Enquiry</a></li>
+                        <!--<li><a href="/feedback.aspx">Feedback</a></li>-->
+                        <li><a href="http://cloud.mastersofterp.in/" target="_blank">MasterSoft Cloud Login</a></li>
+                        <li class="become-partner-btn button-blue"><a href="global-relations/index.html" ><i class="fa fa-globe" aria-hidden="true"></i>Global Relations</a></li>
+                        <li class="become-partner-btn"><a href="https://www.mastersofterp.com/become-a-partner/" target="_blank"><i class="fa fa-handshake-o" aria-hidden="true"></i> Become a Partner</a></li><li class="become-partner-btn button-blue"><a href="digital-marketing-service/index.html" target="_blank"><i class="fa fa-bullhorn" aria-hidden="true"></i>Digital Marketing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/mastersoft-logo.png" alt="MasterSoft" /></a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <nav id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><span></span>Company</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="aboutus.html">About Us</a></li>
+                                    <li><a href="clientlist.html">Customers</a></li>
+                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                    <li><a href="certificate.html">Certifications</a></li>
+                                    <li><a href="careers.html">Careers</a></li>
+                                    <li><a href="minitiative.html">M-Initiative</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span></span>Products</a>
+                             <ul class="dropdown-menu">
+                                   
+                                <li><a href="products/rfcampus/index.html" title="A Cloud / Web-Based E-Governance ERP For Educational Campuses">RF-Campus</a></li>
+                                <li><a href="products/centralized-campus-management-system/index.html" title="Centralized College Management System">CCMS</a></li>
+                                <li><a href="products/rf-lib-man/index.html" title="Library Management System">RFID-Library</a></li>
+                                <li><a href="products/student-information-system-sis/index.html" title="Student Information System">Student Information System (SIS)</a></li>
+                                <li><a href="products/university-administration-and-information-management-system/index.html" title="University Administration & Information Management System">UAIMS</a></li>
+                                <!--<li><a href="/products/school-management-system/" title="School Management System">RF-School</a></li>-->
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span></span>Education ERP</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu"><a href="higher-education-erp/index.html">Higher Education ERP</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="college-erp/index.html">College ERP</a></li>
+                                        <li><a href="university-erp/index.html">University ERP</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="school-erp/index.html">School ERP</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span></span>Special Features</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="rfid-based-attendance-system/index.html">Biometric &amp; RFID Attendance</a></li>
+                                <li><a href="library-management-system/index.html">Library Management</a></li>
+                                <li><a href="hr-management-software/index.html">HR Management</a></li>
+                                <li><a href="mobile-apps-for-educational-institutions/index.html">Mobile Application</a></li>
+                                <li><a href="choicebasedcreditsystem.html">Choice Based Credit System</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span></span>Insights</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="blog/index.html">Blogs</a></li>
+                                <li><a href="event-list.html">Events & Updates</a></li>
+                                <li><a href="media.html">Media</a></li>
+                                <li><a href="video.html">Videos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <form method="post" action="https://www.iitms.co.in/DemoDisplay.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4FE9712C" />
+</div>
+       <div>
+            
+    <div id="main-wrapper">
+        <!-- InstanceBeginEditable name="iitms" -->
+        <div class="container blog-page-content">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>MasterSoft Insight</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        
+                                <div class="blog-block col-sm-6">
+                                    
+                                    <div class="blog-img">
+                                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                            <!-- Indicators -->
+                                           
+                                              <div class="blog-detail">
+                                        <h3 style="margin:0;">
+                                            <a id="ContentPlaceHolder1_Repeater_Blogs_hlALb1_0">Shirpur Education Society, Shirpur Dist. Dhule</a></h3>
+                                        <div class="col-md-4 margin-btm-10 date pull-right"><i class="fa fa-calendar" aria-hidden="true"></i>19/01/2019</div>
+                                    </div>
+                                            
+                                                    <div class="carousel-inner">
+                                                
+                                                    <div class="item" style="margin:0 0 0 0; padding:0 0 0 0;">
+                                                      
+                                    
+                                    <img id="ContentPlaceHolder1_Repeater_Blogs_RptSlider_0_Image1_0" title="Cloudbased CCMS Software Training Session at Shirp" class="img-responsive" src="DemoImages/1.jpg" style="width: 747px; height: 265px;" />
+                                                            </a>
+                                                        
+                                                    </div>
+                                                
+                                                    <div class="item" style="margin:0 0 0 0; padding:0 0 0 0;">
+                                                      
+                                    
+                                    <img id="ContentPlaceHolder1_Repeater_Blogs_RptSlider_0_Image1_1" title="Cloudbased CCMS Software Training Session at Shirp" class="img-responsive" src="DemoImages/3.jpg" style="width: 747px; height: 265px;" />
+                                                            </a>
+                                                        
+                                                    </div>
+                                                
+                                                    
+                                        </div>
+                                                
+                                        </div>
+                                        
+                                    </div>
+
+                                  
+                                    <div class="text-justify inline bcocnt">Training Session at Shirpur Education Society, Shirpur All 9 Colleges Staff. </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p>
+                                            </p>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            
+                                <div class="blog-block col-sm-6">
+                                    
+                                    <div class="blog-img">
+                                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                            <!-- Indicators -->
+                                           
+                                              <div class="blog-detail">
+                                        <h3 style="margin:0;">
+                                            <a id="ContentPlaceHolder1_Repeater_Blogs_hlALb1_1">Nutan College Jalgaon</a></h3>
+                                        <div class="col-md-4 margin-btm-10 date pull-right"><i class="fa fa-calendar" aria-hidden="true"></i>09/01/2019</div>
+                                    </div>
+                                            
+                                                    <div class="carousel-inner">
+                                                
+                                                    <div class="item" style="margin:0 0 0 0; padding:0 0 0 0;">
+                                                      
+                                    
+                                    <img id="ContentPlaceHolder1_Repeater_Blogs_RptSlider_1_Image1_0" title="Mr. Milind Given Training to Staff at Nutan Colleg" class="img-responsive" src="DemoImages/4.jpg" style="width: 747px; height: 265px;" />
+                                                            </a>
+                                                        
+                                                    </div>
+                                                
+                                                    
+                                        </div>
+                                                
+                                        </div>
+                                        
+                                    </div>
+
+                                  
+                                    <div class="text-justify inline bcocnt">Training Session to Staff at Nutan College, Jalgaon </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p>
+                                            </p>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            
+                                <div class="blog-block col-sm-6">
+                                    
+                                    <div class="blog-img">
+                                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                            <!-- Indicators -->
+                                           
+                                              <div class="blog-detail">
+                                        <h3 style="margin:0;">
+                                            <a id="ContentPlaceHolder1_Repeater_Blogs_hlALb1_2">Vivekanand College, Aurangabad</a></h3>
+                                        <div class="col-md-4 margin-btm-10 date pull-right"><i class="fa fa-calendar" aria-hidden="true"></i>07/12/2018</div>
+                                    </div>
+                                            
+                                                    <div class="carousel-inner">
+                                                
+                                                    <div class="item" style="margin:0 0 0 0; padding:0 0 0 0;">
+                                                      
+                                    
+                                    <img id="ContentPlaceHolder1_Repeater_Blogs_RptSlider_2_Image1_0" title="Mr. Ghanshyam Given Training to All Staff" class="img-responsive" src="DemoImages/8.jpg" style="width: 747px; height: 265px;" />
+                                                            </a>
+                                                        
+                                                    </div>
+                                                
+                                                    <div class="item" style="margin:0 0 0 0; padding:0 0 0 0;">
+                                                      
+                                    
+                                    <img id="ContentPlaceHolder1_Repeater_Blogs_RptSlider_2_Image1_1" title="Mr. Ghanshyam Given Training to Vivekanand College" class="img-responsive" src="DemoImages/9.jpg" style="width: 747px; height: 265px;" />
+                                                            </a>
+                                                        
+                                                    </div>
+                                                
+                                                    
+                                        </div>
+                                                
+                                        </div>
+                                        
+                                    </div>
+
+                                  
+                                    <div class="text-justify inline bcocnt">Live CCMS Package Training Session At Vivekanand College Aurangabad </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p>
+                                            </p>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            
+                                <div class="blog-block col-sm-6">
+                                    
+                                    <div class="blog-img">
+                                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                            <!-- Indicators -->
+                                           
+                                              <div class="blog-detail">
+                                        <h3 style="margin:0;">
+                                            <a id="ContentPlaceHolder1_Repeater_Blogs_hlALb1_3">Maharashtra College Nilanaga</a></h3>
+                                        <div class="col-md-4 margin-btm-10 date pull-right"><i class="fa fa-calendar" aria-hidden="true"></i>04/01/2019</div>
+                                    </div>
+                                            
+                                                    <div class="carousel-inner">
+                                                
+                                                    <div class="item" style="margin:0 0 0 0; padding:0 0 0 0;">
+                                                      
+                                    
+                                    <img id="ContentPlaceHolder1_Repeater_Blogs_RptSlider_3_Image1_0" title="Mr. Avinash Given Student Diary Mobile Apps demons" class="img-responsive" src="DemoImages/5.jpg" style="width: 747px; height: 265px;" />
+                                                            </a>
+                                                        
+                                                    </div>
+                                                
+                                                    <div class="item" style="margin:0 0 0 0; padding:0 0 0 0;">
+                                                      
+                                    
+                                    <img id="ContentPlaceHolder1_Repeater_Blogs_RptSlider_3_Image1_1" title="Mr. Avinash Given Student Diary Mobile Apps demons" class="img-responsive" src="DemoImages/7.jpg" style="width: 747px; height: 265px;" />
+                                                            </a>
+                                                        
+                                                    </div>
+                                                
+                                                    
+                                        </div>
+                                                
+                                        </div>
+                                        
+                                    </div>
+
+                                  
+                                    <div class="text-justify inline bcocnt">Student Diary Mobile Apps Training Session to Student & Staff </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p>
+                                            </p>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            
+                    </div>
+                   
+
+                </div>
+            </div>
+        </div>
+        <!-- InstanceEndEditable -->
+      
+    </div>
+    
+    <script>
+        $(document).ready(function () {
+            $(".carousel-inner div.item:first-child").addClass("active");
+            //$('.carousel').carousel();
+        });
+    </script>
+    <script src="photo-gallery/vlb_engine/jquery.min.js"></script>
+    <script src="photo-gallery/vlb_engine/visuallightbox.js"></script>
+    <script src="photo-gallery/vlb_engine/vlbdata1.js"></script>
+    <script src="js/main-menu.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".vlightbox1").each(function () {
+                var input = $(this).find(".hide-img").attr("src");
+                $(this).find(".show-img").attr('src', input);
+                $(".hide-img").hide();
+                // $(".text-box").css('cursor', 'pointer');
+            });
+            //$(".text-box").click(function () {
+            //    var url = $(this).find("a").attr("href");
+            //    window.location.href = url;
+
+            //});
+        });
+    </script>
+
+        </div>
+    </form>
+    <!--live chat-->
+    <!--Add the following script at the bottom of the web page (before </body></html>)-->
+    <script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=59890988"></script>
+    <script type="text/javascript" defer src="https://mylivechat.com/chatinline.aspx?hccid=59890988"></script>
+    <script>
+        function myFunction() {
+            var person = prompt("Please enter your name", "Harry Potter");
+
+            if (person != null) {
+                document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+            }
+        }
+    </script>
+
+    <!--live chat end-->
+
+
+
+    <!-- InstanceEndEditable -->
+    <div class="company-counters text-center">
+        <div class="container">
+            <div class="row">
+                <div class="getTouch">
+                    <h2><span>Ready to get started?</span></h2>
+                    <iframe id="Iframe2" src="homecontactus.html" style="width: 100%; border: 0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footerlogo-div">
+                        <a href="index.html">
+                            <img src="images/footer-logo.png" alt="MasterSoft" /></a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/CampusManagementSolutions/" target="_blank" class="fb-icon social-icon"><i class="fa-facebook fa"></i></a>
+                        <a href="https://www.linkedin.com/company/master%27s-software" target="_blank" class="link-icon social-icon"><i class="fa-linkedin fa"></i></a>
+                        <a href="https://twitter.com/MastersoftErp" target="_blank" class="twitter-icon social-icon"><i class="fa-twitter fa"></i></a>
+                        <a href="https://www.youtube.com/results?search_query=mastersoft+erp" target="_blank" class="youtube-icon social-icon"><i class="fa-youtube fa"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-6">
+                    <p><i class="fa fa-envelope"></i>E-mail: <a href="mailto:sales@iitms.co.in">sales@iitms.co.in</a></p>
+                    <p><i class="fa fa-phone"></i>EPBX: 0712-2713705 / 06 / 07, 2710900, 2710909</p>
+                    <p><i class="fa fa-phone"></i>Phone (Marketing): +91-712-2713714</p><p><i class="fa fa-phone"></i>Phone (HR): +91-7770012749</p>
+                    <p><i class="fa-inbox fa"></i>Fax: +91-712-2713710</p>
+                    <p><i class="fa fa-map-marker"></i>Address: 1456-A, Opp. Pandav Polytechnic College, New Nandanvan, Nagpur-440009 (MS) India</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <ul>
+                                <li><a href="http://sandesh.mastersofterp.in/" target="_blank">Sandesh Portal</a></li>
+                                <li><a href="http://atcovation.in/" target="_blank">Atcovation</a></li>
+                                <li><a href="http://www.feepayr.com/" target="_blank">Feepayr</a></li>
+                                <li><a href="http://www.universityonlineadmission.com/" target="_blank">University Online Admission</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <ul>
+                                <li><a href="careers.html">Careers</a></li>
+                                <li><a href="downloadenquiry.html">Enquiry</a></li>
+                                <li><a href="feedback.html">Feedback</a></li>
+                                <li><a href="http://pms.mastersofterp.in/" target="_blank">Partner Login</a></li>
+                                <li><a href="http://cloud.mastersofterp.in/" target="_blank">Client login</a></li><li><a href="events/mastersoft-knowledge-series.html" target="_blank">Upcoming events</a></li>
+                                <li><a href="DemoDisplay.html" target="_blank">Client visit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright" class="text-center">
+        <div class="container">
+            <div class="row">&copy; 2018 MasterSoft™. All Rights Reserved </div>
+        </div>
+    </div>
+
+    <!--Get in Touch PopUp-->
+    <div class="get-in-touch" style="display:none">
+        <h2><a href="#">Request Free Demo</a></h2>
+    </div>
+    <div class="getpopup">
+        <a href="#" class="close-pop"></a>
+        <iframe src="homecontactusdemo.html" id="iFrame1" class="iframe1" style="height: 450px; width: 100%; border: none;"></iframe>
+    </div>
+    <div class="getoverlay"></div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-PR9VM4"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //$(".getpopup").css({ "left": "25%", "top": "6%" });
+            //$(".getoverlay").css({ "opacity": "1", "display": "block", "right": "0" });
+            $(".get-in-touch a").click(function () {
+                $(".getpopup").css({ "left": "50%", "top": "50%" });
+                $(".getoverlay").css({ "opacity": "1", "display": "block", "right": "0" });
+                responsive: true
+            })
+            $(".getpopup a.close-pop").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(".getoverlay").removeAttr('style');
+            });
+            $(".getoverlay").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(this).removeAttr('style');
+            });
+
+        });
+        if ($(window).width() < 768) {
+            $(".get-in-touch a").click(function () {
+                $(".getpopup").css({ "left": "50%", "top": "50%", "width": "95%" });
+                $(".getoverlay").css({ "opacity": "1", "display": "block", "right": "0" });
+                responsive: true
+            })
+            $(".getpopup a.close-pop").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(".getoverlay").removeAttr('style');
+            });
+            $(".getoverlay").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(this).removeAttr('style');
+            });
+        } else {
+            $(".get-in-touch a").click(function () {
+                $(".getpopup").css({ "left": "50%", "top": "50%" });
+                $(".getoverlay").css({ "opacity": "1", "display": "block", "right": "0" });
+                responsive: true
+            })
+            $(".getpopup a.close-pop").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(".getoverlay").removeAttr('style');
+            });
+            $(".getoverlay").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(this).removeAttr('style');
+            });
+        }
+    </script>
+    <!--live chat-->
+    <!--Add the following script at the bottom of the web page (before </body></html>)-->
+    
+
+    <!--live chat end-->
+    <script src="js/bootstrap-3.3.7.min.js"></script>
+    <script src="js/gallery/script.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-73683529-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script async src='../www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+
+
+
+    
+
+    
+    
+    
+
+
+    <!-- Google Tag Manager -->
+
+
+
+
+</body>
+
+<!-- Mirrored from www.iitms.co.in/DemoDisplay.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Mar 2020 17:29:21 GMT -->
+</html>

@@ -1,0 +1,898 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<!-- Mirrored from www.iitms.co.in/downloadenquiry.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Mar 2020 16:40:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head id="Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"5a4af856b9","applicationID":"265551880","transactionName":"YVQAbBRSV0sHUBZbX1geI2s2HF1XEV0OXVFSVAxJE1pLQUhSEUJI","queueTime":0,"applicationTime":9,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"5a4af856b9",applicationID:"265551880"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /><meta name="description" content="MasterSoft is one of the most trusted brand in providing highly reliable education ERP Software. Also, MasterSoft is excellent at Online examination system, school, college and university management system" /><meta name="keywords" content="university management system, university erp softwares / system, college management system, education software company, erp for education system, mastersoft nagpur, mastersoft, software company in nagpur, erp services" /><meta name="author" /><meta name="p:domain_verify" content="aa560a11f36bae1053650f0585a463af" /><link rel="shortcut icon" href="Images/logo%20and%20icon/MS_favicon.ico" /><title>
+	MasterSoft - Education ERP India
+</title><link rel="stylesheet" type="text/css" href="Clientgallery/css/layout.css" media="screen" />
+
+    
+
+    
+
+    <!--[if IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css" media="screen" /><![endif]-->
+
+    <!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" /><![endif]-->
+
+    <!-- BEGIN: load jquery -->
+    <script src="dt_table/jquery-1.12.3.js"></script>
+    <script src="Clientgallery/js/jquery-1.8.3.min.js"></script>
+    
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('ul.nav-tabs li').click(function () {
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.nav-tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#" + tab_id).addClass('current');
+            })
+
+        })
+    </script>
+
+
+    <script type="text/javascript">
+
+        $(window).load(function () {
+
+            $('#demo-side-bar').removeAttr('style');
+
+        });
+
+    </script>
+
+    <style type="text/css">
+        #demo-side-bar { left: 90%!important; display: block!important; }
+
+        #branding .floatright { margin-right: 130px!important; }
+    </style>
+    <!--  payal---->
+    
+
+    <!--Second menu tab code    end-->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" /><link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!--smooth scroll-->
+
+    <script>
+
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <!--<script type="text/javascript">
+        $(document).ready(function () {
+            $('ul.nav li.dropdown').hover(function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+            }, function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
+        });
+    </script>-->
+    <!--smooth scroll end-->
+
+    
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-PR9VM4');</script>
+    <!-- End Google Tag Manager -->
+    
+    <link href="css/ControlPanel.css" rel="stylesheet" />
+    <script src="js/tabcontent.js" type="text/javascript"></script>
+
+    <!--Second menu tab code    end-->
+    
+    <!-- Bootstrap core CSS -->
+    
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("[id*=Button_Submit]").click(function () {
+                if ($("[id*=Textbox_MobileNo]").val() == "") {
+                    $("[id*=lblMsg]").show();
+                    //    document.getElementById('lblMsg').style.visibility = 'visible';
+                    $("[id*=lblMsg]").text("Please enter contact number");
+                    // $("[id*=txtPhone]").focus();
+                    return false;
+                }
+
+                if ($("[id*=Textbox_MobileNo]").val().length < 5) {
+                    $("[id*=lblMsg]").show();
+                    //    document.getElementById('lblMsg').style.visibility = 'visible';
+                    $("[id*=lblMsg]").text("Please enter valid contact number");
+                    // $("[id*=txtPhone]").focus();
+                    return false;
+                }
+
+            });
+       
+        $("[id*=Textbox_MobileNo]").blur(function () {
+            if ($("[id*=Textbox_MobileNo]").val() == "") {
+                $("[id*=lblMsg]").show();
+                //    document.getElementById('lblMsg').style.visibility = 'visible';
+                $("[id*=lblMsg]").text("");
+                // $("[id*=txtPhone]").focus();
+                return false;
+            }
+            if ($("[id*=Textbox_MobileNo]").val().length < 5) {
+                $("[id*=lblMsg]").show();
+                $("[id*=lblMsg]").text("Please enter valid contact number");
+                // $("[id*=txtPhone]").focus();
+                return false;
+            }
+            else { $("[id*=lblMsg]").hide(); }
+        });
+        //$("[id*=Textbox_Phone]").blur(function () {
+        //    if ($("[id*=Textbox_Phone]").val() == "") {
+        //        $("[id*=lblPhone]").show();
+        //        //    document.getElementById('lblMsg').style.visibility = 'visible';
+        //        $("[id*=lblPhone]").text("");
+        //        // $("[id*=txtPhone]").focus();
+        //        return false;
+        //    }
+        //    if ($("[id*=Textbox_Phone]").val().length < 5) {
+        //        $("[id*=lblPhone]").show();
+        //        $("[id*=lblPhone]").text("Please enter valid phone number");
+        //        // $("[id*=txtPhone]").focus();
+        //        return false;
+        //    }
+        //    else { $("[id*=lblPhone]").hide(); }
+        //});
+        });
+        function Count(x) {
+
+            var nLength = document.getElementById(x).value.length;
+            //if (nLength < 10 && nLength > 0) {
+            if (nLength < 5) {
+                //alert("Please enter valid mobile no.");
+                document.getElementById('lblMsg').style.visibility = 'visible';
+                document.getElementById('lblMsg').innerHTML = "Please enter valid mobile number.";
+               // document.getElementById(x).value = "";
+            }
+
+
+        }
+        function PhoneNo(phoneno) {
+
+            var nLength = document.getElementById(phoneno).value.length;
+            // if (nLength < 10 && nLength > 0) {
+            if (nLength < 5) {
+              //  alert("Please enter valid phone no.");
+                document.getElementById('lblPhone').style.visibility = 'visible';
+                document.getElementById('lblPhone').innerHTML = "Please enter valid phone number.";
+                //alert("Please enter phone  number at least 10 digit");
+               // document.getElementById(phoneno).value = "";
+            }
+
+
+        }
+    </script>
+
+    
+    <!-- Bootstrap core CSS -->
+    
+    
+</head>
+<body>
+    <header class="navbar navbar-default" role="navigation">
+        <div class="top-links">
+            <div class="container">
+                <div class="row">
+                    <ul>
+                        <li><a href="downloadenquiry.html">Product Enquiry</a></li>
+                        <!--<li><a href="/feedback.aspx">Feedback</a></li>-->
+                        <li><a href="http://cloud.mastersofterp.in/" target="_blank">MasterSoft Cloud Login</a></li>
+                        <li class="become-partner-btn button-blue"><a href="global-relations/index.html" ><i class="fa fa-globe" aria-hidden="true"></i>Global Relations</a></li>
+                        <li class="become-partner-btn"><a href="https://www.mastersofterp.com/become-a-partner/" target="_blank"><i class="fa fa-handshake-o" aria-hidden="true"></i> Become a Partner</a></li><li class="become-partner-btn button-blue"><a href="digital-marketing-service/index.html" target="_blank"><i class="fa fa-bullhorn" aria-hidden="true"></i>Digital Marketing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/mastersoft-logo.png" alt="MasterSoft" /></a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <nav id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><span></span>Company</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="aboutus.html">About Us</a></li>
+                                    <li><a href="clientlist.html">Customers</a></li>
+                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                    <li><a href="certificate.html">Certifications</a></li>
+                                    <li><a href="careers.html">Careers</a></li>
+                                    <li><a href="minitiative.html">M-Initiative</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span></span>Products</a>
+                             <ul class="dropdown-menu">
+                                   
+                                <li><a href="products/rfcampus/index.html" title="A Cloud / Web-Based E-Governance ERP For Educational Campuses">RF-Campus</a></li>
+                                <li><a href="products/centralized-campus-management-system/index.html" title="Centralized College Management System">CCMS</a></li>
+                                <li><a href="products/rf-lib-man/index.html" title="Library Management System">RFID-Library</a></li>
+                                <li><a href="products/student-information-system-sis/index.html" title="Student Information System">Student Information System (SIS)</a></li>
+                                <li><a href="products/university-administration-and-information-management-system/index.html" title="University Administration & Information Management System">UAIMS</a></li>
+                                <!--<li><a href="/products/school-management-system/" title="School Management System">RF-School</a></li>-->
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span></span>Education ERP</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu"><a href="higher-education-erp/index.html">Higher Education ERP</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="college-erp/index.html">College ERP</a></li>
+                                        <li><a href="university-erp/index.html">University ERP</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="school-erp/index.html">School ERP</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span></span>Special Features</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="rfid-based-attendance-system/index.html">Biometric &amp; RFID Attendance</a></li>
+                                <li><a href="library-management-system/index.html">Library Management</a></li>
+                                <li><a href="hr-management-software/index.html">HR Management</a></li>
+                                <li><a href="mobile-apps-for-educational-institutions/index.html">Mobile Application</a></li>
+                                <li><a href="choicebasedcreditsystem.html">Choice Based Credit System</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><span></span>Insights</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="blog/index.html">Blogs</a></li>
+                                <li><a href="event-list.html">Events & Updates</a></li>
+                                <li><a href="media.html">Media</a></li>
+                                <li><a href="video.html">Videos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <form method="post" action="https://www.iitms.co.in/downloadenquiry.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="GZKPiCJbUEROw5Id3GzzsNM5FmOlVouzeue1G39N6d/1TGxnDuMJN6Q5dnohji8YU3CVFgeKQON0f0Q5+b4qdnk0TE+xE3MJpQqKveJjsXLpPhCmGg92HHIItDA0x17FcuXM3n21biGP+c/Ccdl10zqk1WNLtnFBKDu+8aptK8GgoO3nG1YV0ZS5UDIdJ8LtmtWo1gS/xwcxwvk6Ckoe1axy65GHNTn0nyQwnIEnOSxBdQTeFJWicQI+1G9d9yvQdh3eySwsrBmFelDlNb04vpN/gOKRXV52hHReeBv3aCSNSQLF6I3u9qeopd8FGqWV81GePvcljfpkw3Pd5Jt4n0QFXlh747fJTB8g3MnlsJTgLpHCjpOHXXGD5R3aoGdLZMqxOZEfiyUa2zl12gwk4GGVUxgWpPTCtUEGSr+Cnil40Cyyaw+ny2rTUP5X8z9KTiQ5j3ma7sB+7EvjCWhyJJMhjdTB1N3R/JgRqXMRgMLGyaM7CgB5sFpE3F0MDh/izIflukf9oKYKNI23auqOjYrosS+NuonVIqHVGl7YA8ADSdvYn/KA33+PvZofBnggz2bYBWMJ5yonn+P7pxD2YLwCjN3Dmqc2Jehqv4sUM53Xnge/8BA7n8Y4O9G8miEhU+omrLhJOatH9oAcfKUzasFXHeCO7YaNI/vxI9tRB0ApuxrHc0fHmgNNoLPnwO0y7JjXth/jZPvipSt26rDv4ZqROEzns35e6WDk1WLkwaL4Nk3y4ZfdQAXH52dc0ZHytZK0bWFCtFbV6XN2LsMA6+0DeBdNqYOUkDw8C4dCo81E76Fo8QML02kvz+EGLA38KSpijQQI8kjiBT86PpNz+9ST7YQhr5ktYMXfz4dmzVwaE8N3L8Ze+y48LkRMNH+lLIW1FDvWTISIMgR4YQk8SjUFTIlNw9IaW9Tt0t5RhDzdcxsFHYsyLwZjcDw3qQw52AhlaB5p6Micb0kGx8zF3virqYMG2u6uS3KxNozvP0ghNnnwCp2Scx8P98IjWcIltaGa/8YL/uTKh9R+OzrkBh5E62/cSlKJJpklb4kyuSL59GGdvoXZX1zFH0ZbXoluYy2EePwtrhHaeJP+ikjl4MTEQfk27E7G/AhNaL1R1vD6YiCw+aswRlAV9kUiq0q1ZOposKcEOBdNh2540xG0iHW0oLjBXG5dgoj83iWSx75GVMx3HjUoiujAq41krFs6IuhM4vzcLNP+rA7YfRYibogtUDDqjQ/ljImOgbbwYuKWaYAvgj1WS4nIjvsaK8Y7TPY3DK3eXabolweIW5YCPvXsptWaUgtN7ZnShfWMlmj0zOABsOR5DNQX/apusHWsNEy4+50WIbhERiYUlqN92ol6idHdwd7JGPc2eUfUowdmNFiMVHGTUKlByUHPohrxf58FhM68mNH3yJRo/G6OwClgJqoKB0sjgDhuZ/flZZTQsnDe4zv0cQ0svlybg3ghEOyFOGgypKPeJ0JGjcLq4Ic9FwnGe47Wp5aX4DUw9+3bQAYoEZmSnTtf712gViB+JVvX71Co35L+8ierQyX20w50BWEHhIa3R2p5Zp7mOuLY8uokli5KNXdqyICUkvIrjodNwKVaolHfxJvNCj99BXKVXis+orvbZw9civ5LNXE5QQWij/W8ovsNnl9WliwGJEB6gN5/1w+HST1iUp6aDQNQsiHeXJBO50DgO0VU1RBlPca4GNR967yN/x+ZxIowjTMVg70OjiSEuIPEknx/63gS+QNk3Y3rRfWEUlDG8PXLQ22Hx0Dh+pQlqx/3lJSIwJu8TuJILfuaQT/P/UjdExgnuI9ajqi86aFqqiPLnt/337ypQUhIp+dTuPtATgp7s2DYsO39I7EvpHuGTTYUS1yEYjAn2iETVMNm5MIJHtthAS7Le5wcx1ce9ZdH4yVW2mTWc+C10lpY2lAJ687LhjYoM0g5LCX3AtV5cp7mhoDCpLyc2JUFclWYgUiQp3Eva7laJDQaOzJ3zICGU6bE/fotkMW3v5uP12v3gv/C1l9pwilt5qYT166OU3F6bt4o/FSk9Oao0WBTWIJ8M4U6sIDaGTfYNd6KGiSINF5FqKinNYxMXX8f4lsTzNlvNWmF/q2IsNK3R1/ocpq314uDJSX3N5/3dDfw0hZgSlaB8LcjXTfEgjAxe1BOIl3XG6T4R4e0xn65ysnbM+znRQkOXHTz9pXy5hSAQidJ968tQy97OkuRXOJ5wGvWOiXqilO0iUMmPDWp+E/KDz9JkHUGiw6w4542BQ4AbOcMlU5QC8Pl02UgvVjPLs58jtSYmtTy5iYyAzVmS4wemLu1YEuMaD9ZHGWuUgPLr72rClFqVUdjjGS5Rr6u3T193plwL+fjqdS3plIDRB7ZlMSdIDI48GP/FlSWQ73ZmK95jad9dN1A+1vrrtli/HT/SDEITTe874d6mH+YVYXXqS/u+c5HaBvAmDlnCLyPn/n3WhaNfvvU4mn/ERMRRjG3PGunJz4+NTStPVKVZzsbGV3GP5tex+nfm4fLvSe77K5lIvGW5FrdyAgsYOGgwTKXcPn2xTxvOxpk9yZ3DXI3XxYV+R4LCEb4976plznMtjFHQtHZ0VRvRbt4WrBBxc4EAgElDzCK" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResource70d7.js?d=pynGkmcFUV13He1Qd6_TZA6wCU-oTq8P2UWbvmDCNrzJ_LWoT1zHPdgXz1kNJ7Q0csOHdmCqfcmokf9-LqzF6A2&amp;t=636427218960000000" type="text/javascript"></script>
+
+
+<script src="ScriptResource385f.js?d=nv7asgRUU0tRmHNR2D6t1I1VZ6vciNJJIRyppyBrLwA3qBBPjPKR434VdY7xtxQr4oLBMXUE15nDK8pEGE4Q0HAvz3PTJ244vrPbVfFp-kz0MPfsvLaaw6R897lNsxdJCbh9b304mQyZnXHCuTuOzw2&amp;t=548dd326" type="text/javascript"></script>
+<script src="ScriptResourcef05e.js?d=D9drwtSJ4hBA6O8UhT6CQuUkVxaRzKpRp7nM7rr8PpfHj34sP1PgX7idYXh3-g0h6ZdpRdcL2xDSev0LIuJ4zeJU9pSNdypxYNrlEoG_URPLM_HdyY48LSyDSHXe9so3c2WGLlWB6hdTihxdnF1qv_vl968JM96KVe57A-AZ9II1&amp;t=72fc8ae3" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="ScriptResource30b2.js?d=JnUc-DEDOM5KzzVKtsL1tU9dbrdl-cBYvpn2YWmt075aWos5dIhY_wsVwq8lEDnimMlppj0uCJYw1qFolc3_riyowGmoFWivnxjFnaEG2MkiWROgsm7TeQZo7fbNtpBv0_n-ntZkJin78GOliEEIl_OCkeeXVm2pSiUafEdjax8ltCcHGo2DxA_2FK2_h8Yf0&amp;t=72fc8ae3" type="text/javascript"></script>
+<script src="ScriptResourcea8a2.axd?d=8HBMVpJM49mm80uR-ggjY1cuVQxQJFOj3wGFNN8UdMKlAZGoGZp6AUqD-J3U7KMeScwFAQh_906qTeEjSIRyjzyJDnkFyU48mCs8K2zimXSCHfA5A0A7dj14jeYl8oTr5F52y1ucu3zfQ0UrHYUxLw2&amp;t=ffffffff9b7d03cf" type="text/javascript"></script>
+<script src="ScriptResource3f91.axd?d=8CjII1v0OLoMNKf5zGXmeryzbpGVxz9lQYa-EsruvLQJRhUNKt9D_D7gNGEVXw2ICeergjd47jrFavhhIu7dBVr2mVnPu_9zWiGaMrueo3uZStKTFr8jGI5jq0tOgJfK_xguUYrzJ_paSdJ57xZuu5fVju5nXi7mFwkjQmYvfJk1&amp;t=ffffffff9b7d03cf" type="text/javascript"></script>
+<script src="ScriptResourcec246.axd?d=qvCoZ0-bwwVA_pMW6B-GO8DNkOn1TTXOYfKJ-7C5QNCNrtg1rcwCcQj1gPimEMxj3IPe8JT38pygfVaw9e53ru4IfVRbl_j5fLqK-j2mW_YtGXYItR5nUfdo2K25yNydqI0VnFb_Pz0h6Lm6qIVQzFoE7EimWnxw1ZbMppzoIVfXkuPFVCk_YJJj3FV_yaYh0&amp;t=ffffffff9b7d03cf" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D76107DA" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="L8lWULWQ7jKQJJLqYx0qrD4X7LWq7oOzRwaBZGJ1VnRLFX9iADnGwLsq2ki/H5SNr6p8/tinIc3wvOcwhrixImuZSqopaHX39RRfviRH+mWQ10Io3yYLkDb1DQRJ0Mn+ZdQ9OcMPT9UF0bKIPXae+hkUAqNpHvMvWSd3sp/20q7Wl5j2J1i578r2p6d9He/XsZcsVG+SgQ8qZoedXRgQ5+ytn6YmVMX1dJmhX94vAeohGwQrd8bEHw5JkVklJpgpS4EqjFJQVg50gctDGddnQT8lENWjonLkTJJ4yM0zeAcxOddP38ikVYM3pcVJCVrBcLTskidLBOhAYopfAAZV68RLwZs/ZJ/e46r3V4vEKHMOHVfsIx8XRVUzOP2ATamEF8LnQuPSYizegc7JSSag8mmevFRoyegOMCDwSqxAUZIaqHGiT7BCuKZSf2H1yAlrqOY3xFrg25EA6DxS2O04YxkwA2tY5lkVzdpFh3m2TiVyGY+X31BGar2rsl9hZPcCXGqYRCK8kxR/TUanQPiKqOXZea8nXz+7bCUlP4cYFTkwikgUDPzJcZGX5Jd2Rr7E8bdQQGEHnKYgZQs5sJM63RwBJofcLHSchb+8SXzP2QNO/3jj9nAkiRv7DZyVAG6Io+KE6EJ3awMDmKjgw3GHIzYUXZ9kdrEhJGqroe08QABczv/eVqokcRej1BxgQ1hSLFuluy15AklfLVd0Q5bviRrZDPgTW2L3VKVFl2wUWmfOwjtxABssLS6jfDTx+t42P7XwHd7sa2FPZMdrOYpnCa+McvNbAIKpgzx3ePsqGWkDJkADuWoVD7xISReL1jPvx1QwErjk0gpHxYmAHDTfEXhpowTidPtyXCKwd7IwTB7QImkydYD6m/5bZflgiUuf" />
+</div>
+       <div>
+            
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ScriptManager_Main', 'form1', ['tctl00$ContentPlaceHolder1$UpdatePanel_NewsEvent','ContentPlaceHolder1_UpdatePanel_NewsEvent'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <script type="text/javascript">
+
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(RunThisAfterEachAsyncPostback);
+    </script>
+    <div id="ContentPlaceHolder1_UpdatePanel_NewsEvent">
+	
+
+
+            <div id="main-wrapper">
+                <script type="text/javascript">
+                    RunThisAfterEachAsyncPostback();
+                    Sys.WebForms.PageRequestManager.getInstance().add_endRequest(RunThisAfterEachAsyncPostback);
+                </script>
+
+                <div class="container enquiry-form">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1 class="text-center">Enquiry</h1>
+                            <div class="text-center margin-btm-15">
+                                <img src="Images/downloads-msg.png" />
+                            </div>
+                            <div class="form">
+                                <div>
+                                    
+                                </div>
+                                <div>
+                                    
+
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="required">Name</label>
+                                                <input name="ctl00$ContentPlaceHolder1$Textbox_Name" type="text" maxlength="100" id="ContentPlaceHolder1_Textbox_Name" class="form-control" />
+                                                <span id="ContentPlaceHolder1_rfv_Name" class="error" style="display:none;">Please enter name</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="required">Institute Type</label>
+                                                <select name="ctl00$ContentPlaceHolder1$DropDownlist_InstituteType" id="ContentPlaceHolder1_DropDownlist_InstituteType" class="form-control">
+		<option value="0">* Select Institute Type</option>
+		<option value="1">Autonomous Institution</option>
+		<option value="2">Engg/Poly/MBA/Pharmacy</option>
+		<option value="4">Medical Colleges</option>
+		<option value="6">Schools</option>
+		<option value="5">UGC College</option>
+
+	</select>
+                                                <span id="ContentPlaceHolder1_rfv_InstituteType" class="error" style="display:none;">Please select institute type</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="required">Institute Name</label>
+                                                <input name="ctl00$ContentPlaceHolder1$Textbox_InstituteName" type="text" maxlength="100" id="ContentPlaceHolder1_Textbox_InstituteName" class="form-control" />
+                                                <span id="ContentPlaceHolder1_rfv_Organization" class="error" style="display:none;">Please enter institute name</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="required">City</label>
+                                                <input name="ctl00$ContentPlaceHolder1$Textbox_City" type="text" maxlength="50" id="ContentPlaceHolder1_Textbox_City" title="Enter City" class="form-control" />
+                                                <span id="ContentPlaceHolder1_rfv_City" class="error" style="display:none;">Please enter city</span>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="required">State</label>
+                                                <input name="ctl00$ContentPlaceHolder1$Textbox_State" type="text" maxlength="50" id="ContentPlaceHolder1_Textbox_State" title="Enter State" class="form-control" />
+                                                <span id="ContentPlaceHolder1_rfv_State" class="error" style="display:none;">Please enter state</span>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="required">E-mail Id</label>
+                                                <input name="ctl00$ContentPlaceHolder1$Textbox_EmailID" type="text" maxlength="50" id="ContentPlaceHolder1_Textbox_EmailID" title="Enter E-mail Id" class="form-control" />
+                                                <span id="ContentPlaceHolder1_rfv_Emailid" class="error" style="display:none;">Please enter e-mail Id </span>
+                                                <span id="ContentPlaceHolder1_regFieldValidator_EmailAddress" class="error" style="display:none;">Please enter valid e-mail id.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group" style="display:none;">
+                                                <label class="required">Phone Number</label>
+                                                <input name="ctl00$ContentPlaceHolder1$Textbox_Phone" type="text" id="ContentPlaceHolder1_Textbox_Phone" title="Enter Phone Number" class="form-control" /> 
+                                                 <span id="ContentPlaceHolder1_lblPhone" class="error"></span>
+                                              
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="required">Contact Number</label>
+                                                <input name="ctl00$ContentPlaceHolder1$Textbox_MobileNo" type="text" id="ContentPlaceHolder1_Textbox_MobileNo" title="Enter Mobile Number" class="form-control" onblur="Count(this.id);" />
+                                                  <span id="ContentPlaceHolder1_lblMsg" class="error"></span>
+                                              
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Postal Address</label>
+                                                <textarea name="ctl00$ContentPlaceHolder1$Textbox_Address" rows="2" cols="20" id="ContentPlaceHolder1_Textbox_Address" title="Enter address" class="form-control" PlaceHolder="In case you want it delivered in hard copy.">
+</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Please select your option:</label>
+                                                <table id="ContentPlaceHolder1_CheckBoxList_Module" class="checkbox-list" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+		<tr>
+			<td><input id="ContentPlaceHolder1_CheckBoxList_Module_0" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$0" value="1" /><label for="ContentPlaceHolder1_CheckBoxList_Module_0">Academic and Exam</label></td><td><input id="ContentPlaceHolder1_CheckBoxList_Module_11" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$11" value="14" /><label for="ContentPlaceHolder1_CheckBoxList_Module_11">Hostel</label></td>
+		</tr><tr>
+			<td><input id="ContentPlaceHolder1_CheckBoxList_Module_1" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$1" value="2" /><label for="ContentPlaceHolder1_CheckBoxList_Module_1">Account</label></td><td><input id="ContentPlaceHolder1_CheckBoxList_Module_12" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$12" value="15" /><label for="ContentPlaceHolder1_CheckBoxList_Module_12">Document Management</label></td>
+		</tr><tr>
+			<td><input id="ContentPlaceHolder1_CheckBoxList_Module_2" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$2" value="3" /><label for="ContentPlaceHolder1_CheckBoxList_Module_2">Admission and Fees Collection</label></td><td><input id="ContentPlaceHolder1_CheckBoxList_Module_13" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$13" value="16" /><label for="ContentPlaceHolder1_CheckBoxList_Module_13">Fees Collection</label></td>
+		</tr><tr>
+			<td><input id="ContentPlaceHolder1_CheckBoxList_Module_3" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$3" value="4" /><label for="ContentPlaceHolder1_CheckBoxList_Module_3">E-Learning</label></td><td><input id="ContentPlaceHolder1_CheckBoxList_Module_14" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$14" value="17" /><label for="ContentPlaceHolder1_CheckBoxList_Module_14">Attendance</label></td>
+		</tr><tr>
+			<td><input id="ContentPlaceHolder1_CheckBoxList_Module_4" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$4" value="5" /><label for="ContentPlaceHolder1_CheckBoxList_Module_4">Library</label></td><td><input id="ContentPlaceHolder1_CheckBoxList_Module_15" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$15" value="18" /><label for="ContentPlaceHolder1_CheckBoxList_Module_15">Purchase</label></td>
+		</tr><tr>
+			<td><input id="ContentPlaceHolder1_CheckBoxList_Module_5" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$5" value="6" /><label for="ContentPlaceHolder1_CheckBoxList_Module_5">Payroll and Establishment</label></td><td><input id="ContentPlaceHolder1_CheckBoxList_Module_16" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$16" value="19" /><label for="ContentPlaceHolder1_CheckBoxList_Module_16">Estate</label></td>
+		</tr><tr>
+			<td><input id="ContentPlaceHolder1_CheckBoxList_Module_6" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$6" value="7" /><label for="ContentPlaceHolder1_CheckBoxList_Module_6">Stores</label></td><td><input id="ContentPlaceHolder1_CheckBoxList_Module_17" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$17" value="20" /><label for="ContentPlaceHolder1_CheckBoxList_Module_17">Online Admission Registration</label></td>
+		</tr><tr>
+			<td><input id="ContentPlaceHolder1_CheckBoxList_Module_7" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$7" value="8" /><label for="ContentPlaceHolder1_CheckBoxList_Module_7">Human Resource Management System</label></td><td><input id="ContentPlaceHolder1_CheckBoxList_Module_18" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$18" value="21" /><label for="ContentPlaceHolder1_CheckBoxList_Module_18">Online Admission Counselling</label></td>
+		</tr><tr>
+			<td><input id="ContentPlaceHolder1_CheckBoxList_Module_8" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$8" value="11" /><label for="ContentPlaceHolder1_CheckBoxList_Module_8">Faculty Recruitment Program</label></td><td><input id="ContentPlaceHolder1_CheckBoxList_Module_19" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$19" value="22" /><label for="ContentPlaceHolder1_CheckBoxList_Module_19">Legal Matters</label></td>
+		</tr><tr>
+			<td><input id="ContentPlaceHolder1_CheckBoxList_Module_9" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$9" value="12" /><label for="ContentPlaceHolder1_CheckBoxList_Module_9">Vehicle Management</label></td><td><input id="ContentPlaceHolder1_CheckBoxList_Module_20" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$20" value="23" /><label for="ContentPlaceHolder1_CheckBoxList_Module_20">Scholarship</label></td>
+		</tr><tr>
+			<td><input id="ContentPlaceHolder1_CheckBoxList_Module_10" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$10" value="13" /><label for="ContentPlaceHolder1_CheckBoxList_Module_10">Dispatch</label></td><td><input id="ContentPlaceHolder1_CheckBoxList_Module_21" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBoxList_Module$21" value="24" /><label for="ContentPlaceHolder1_CheckBoxList_Module_21">Website</label></td>
+		</tr>
+	</table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            <div class="form-group">
+                                                <input type="submit" name="ctl00$ContentPlaceHolder1$Button_Submit" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$Button_Submit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder1_Button_Submit" tabindex="17" class="btn btn-primary" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            Will get in touch soon !!!
+                                        <br />
+                                            (You will receive E-mail for confirmation.)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+</div>
+
+
+    
+
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+    
+
+    <script type="text/javascript">
+        $(document).ready(function ($) {
+            // delegate calls to data-toggle="lightbox"
+            $(document).delegate('*[data-toggle="lightbox"]', 'click', function (event) {
+                event.preventDefault();
+                return $(this).ekkoLightbox({
+                    onShown: function () {
+                        if (window.console) {
+                            return console.log('Checking our the events huh?');
+                        }
+                    },
+                    onNavigate: function (direction, itemIndex) {
+                        if (window.console) {
+                            return console.log('Navigating ' + direction + '. Current item: ' + itemIndex);
+                        }
+                    }
+                });
+            });
+
+            //Programatically call
+            $('#open-image').click(function (e) {
+                e.preventDefault();
+                $(this).ekkoLightbox();
+            });
+            $('#open-youtube').click(function (e) {
+                e.preventDefault();
+                $(this).ekkoLightbox();
+            });
+
+        });
+    </script>
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-PR9VM4"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-PR9VM4');</script>
+    <!-- End Google Tag Manager -->
+    <!--<img src="https://www.linkedin.com/profile/view?authToken=zRgB&authType=name&id=735b9771" />-->
+
+        </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder1_rfv_Name"), document.getElementById("ContentPlaceHolder1_rfv_InstituteType"), document.getElementById("ContentPlaceHolder1_rfv_Organization"), document.getElementById("ContentPlaceHolder1_rfv_City"), document.getElementById("ContentPlaceHolder1_rfv_State"), document.getElementById("ContentPlaceHolder1_rfv_Emailid"), document.getElementById("ContentPlaceHolder1_regFieldValidator_EmailAddress"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ContentPlaceHolder1_rfv_Name = document.all ? document.all["ContentPlaceHolder1_rfv_Name"] : document.getElementById("ContentPlaceHolder1_rfv_Name");
+ContentPlaceHolder1_rfv_Name.controltovalidate = "ContentPlaceHolder1_Textbox_Name";
+ContentPlaceHolder1_rfv_Name.focusOnError = "t";
+ContentPlaceHolder1_rfv_Name.errormessage = "Please enter name";
+ContentPlaceHolder1_rfv_Name.display = "Dynamic";
+ContentPlaceHolder1_rfv_Name.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_rfv_Name.initialvalue = "";
+var ContentPlaceHolder1_rfv_InstituteType = document.all ? document.all["ContentPlaceHolder1_rfv_InstituteType"] : document.getElementById("ContentPlaceHolder1_rfv_InstituteType");
+ContentPlaceHolder1_rfv_InstituteType.controltovalidate = "ContentPlaceHolder1_DropDownlist_InstituteType";
+ContentPlaceHolder1_rfv_InstituteType.focusOnError = "t";
+ContentPlaceHolder1_rfv_InstituteType.errormessage = "Please select institute type";
+ContentPlaceHolder1_rfv_InstituteType.display = "Dynamic";
+ContentPlaceHolder1_rfv_InstituteType.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_rfv_InstituteType.initialvalue = "0";
+var ContentPlaceHolder1_rfv_Organization = document.all ? document.all["ContentPlaceHolder1_rfv_Organization"] : document.getElementById("ContentPlaceHolder1_rfv_Organization");
+ContentPlaceHolder1_rfv_Organization.controltovalidate = "ContentPlaceHolder1_Textbox_InstituteName";
+ContentPlaceHolder1_rfv_Organization.focusOnError = "t";
+ContentPlaceHolder1_rfv_Organization.errormessage = "Please enter institute name";
+ContentPlaceHolder1_rfv_Organization.display = "Dynamic";
+ContentPlaceHolder1_rfv_Organization.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_rfv_Organization.initialvalue = "";
+var ContentPlaceHolder1_rfv_City = document.all ? document.all["ContentPlaceHolder1_rfv_City"] : document.getElementById("ContentPlaceHolder1_rfv_City");
+ContentPlaceHolder1_rfv_City.controltovalidate = "ContentPlaceHolder1_Textbox_City";
+ContentPlaceHolder1_rfv_City.focusOnError = "t";
+ContentPlaceHolder1_rfv_City.errormessage = "Please enter city";
+ContentPlaceHolder1_rfv_City.display = "Dynamic";
+ContentPlaceHolder1_rfv_City.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_rfv_City.initialvalue = "";
+var ContentPlaceHolder1_rfv_State = document.all ? document.all["ContentPlaceHolder1_rfv_State"] : document.getElementById("ContentPlaceHolder1_rfv_State");
+ContentPlaceHolder1_rfv_State.controltovalidate = "ContentPlaceHolder1_Textbox_State";
+ContentPlaceHolder1_rfv_State.focusOnError = "t";
+ContentPlaceHolder1_rfv_State.errormessage = "Please enter state";
+ContentPlaceHolder1_rfv_State.display = "Dynamic";
+ContentPlaceHolder1_rfv_State.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_rfv_State.initialvalue = "";
+var ContentPlaceHolder1_rfv_Emailid = document.all ? document.all["ContentPlaceHolder1_rfv_Emailid"] : document.getElementById("ContentPlaceHolder1_rfv_Emailid");
+ContentPlaceHolder1_rfv_Emailid.controltovalidate = "ContentPlaceHolder1_Textbox_EmailID";
+ContentPlaceHolder1_rfv_Emailid.focusOnError = "t";
+ContentPlaceHolder1_rfv_Emailid.errormessage = "Please enter e-mail Id ";
+ContentPlaceHolder1_rfv_Emailid.display = "Dynamic";
+ContentPlaceHolder1_rfv_Emailid.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_rfv_Emailid.initialvalue = "";
+var ContentPlaceHolder1_regFieldValidator_EmailAddress = document.all ? document.all["ContentPlaceHolder1_regFieldValidator_EmailAddress"] : document.getElementById("ContentPlaceHolder1_regFieldValidator_EmailAddress");
+ContentPlaceHolder1_regFieldValidator_EmailAddress.controltovalidate = "ContentPlaceHolder1_Textbox_EmailID";
+ContentPlaceHolder1_regFieldValidator_EmailAddress.focusOnError = "t";
+ContentPlaceHolder1_regFieldValidator_EmailAddress.errormessage = "Please enter valid e-mail id.";
+ContentPlaceHolder1_regFieldValidator_EmailAddress.display = "Dynamic";
+ContentPlaceHolder1_regFieldValidator_EmailAddress.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+ContentPlaceHolder1_regFieldValidator_EmailAddress.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('ContentPlaceHolder1_rfv_Name').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_rfv_Name'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"ValidChars":"QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm ","id":"ContentPlaceHolder1_fte_Name"}, null, null, $get("ContentPlaceHolder1_Textbox_Name"));
+});
+
+document.getElementById('ContentPlaceHolder1_rfv_InstituteType').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_rfv_InstituteType'));
+}
+
+document.getElementById('ContentPlaceHolder1_rfv_Organization').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_rfv_Organization'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"ValidChars":"QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm ","id":"ContentPlaceHolder1_fte_InstituteName"}, null, null, $get("ContentPlaceHolder1_Textbox_InstituteName"));
+});
+
+document.getElementById('ContentPlaceHolder1_rfv_City').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_rfv_City'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"ValidChars":"QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm ","id":"ContentPlaceHolder1_fte_City"}, null, null, $get("ContentPlaceHolder1_Textbox_City"));
+});
+
+document.getElementById('ContentPlaceHolder1_rfv_State').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_rfv_State'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"ValidChars":"QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm ","id":"ContentPlaceHolder1_fte_State"}, null, null, $get("ContentPlaceHolder1_Textbox_State"));
+});
+
+document.getElementById('ContentPlaceHolder1_rfv_Emailid').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_rfv_Emailid'));
+}
+
+document.getElementById('ContentPlaceHolder1_regFieldValidator_EmailAddress').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_regFieldValidator_EmailAddress'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.FilteredTextBoxBehavior, {"ValidChars":"1234567890-+ ","id":"ContentPlaceHolder1_FilteredTextBoxExtender1"}, null, null, $get("ContentPlaceHolder1_Textbox_MobileNo"));
+});
+//]]>
+</script>
+</form>
+    <!--live chat-->
+    <!--Add the following script at the bottom of the web page (before </body></html>)-->
+    <script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=59890988"></script>
+    <script type="text/javascript" defer src="https://mylivechat.com/chatinline.aspx?hccid=59890988"></script>
+    <script>
+        function myFunction() {
+            var person = prompt("Please enter your name", "Harry Potter");
+
+            if (person != null) {
+                document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+            }
+        }
+    </script>
+
+    <!--live chat end-->
+
+
+
+    <!-- InstanceEndEditable -->
+    <div class="company-counters text-center">
+        <div class="container">
+            <div class="row">
+                <div class="getTouch">
+                    <h2><span>Ready to get started?</span></h2>
+                    <iframe id="Iframe2" src="homecontactus.html" style="width: 100%; border: 0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footerlogo-div">
+                        <a href="index.html">
+                            <img src="images/footer-logo.png" alt="MasterSoft" /></a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/CampusManagementSolutions/" target="_blank" class="fb-icon social-icon"><i class="fa-facebook fa"></i></a>
+                        <a href="https://www.linkedin.com/company/master%27s-software" target="_blank" class="link-icon social-icon"><i class="fa-linkedin fa"></i></a>
+                        <a href="https://twitter.com/MastersoftErp" target="_blank" class="twitter-icon social-icon"><i class="fa-twitter fa"></i></a>
+                        <a href="https://www.youtube.com/results?search_query=mastersoft+erp" target="_blank" class="youtube-icon social-icon"><i class="fa-youtube fa"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-6">
+                    <p><i class="fa fa-envelope"></i>E-mail: <a href="mailto:sales@iitms.co.in">sales@iitms.co.in</a></p>
+                    <p><i class="fa fa-phone"></i>EPBX: 0712-2713705 / 06 / 07, 2710900, 2710909</p>
+                    <p><i class="fa fa-phone"></i>Phone (Marketing): +91-712-2713714</p><p><i class="fa fa-phone"></i>Phone (HR): +91-7770012749</p>
+                    <p><i class="fa-inbox fa"></i>Fax: +91-712-2713710</p>
+                    <p><i class="fa fa-map-marker"></i>Address: 1456-A, Opp. Pandav Polytechnic College, New Nandanvan, Nagpur-440009 (MS) India</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <ul>
+                                <li><a href="http://sandesh.mastersofterp.in/" target="_blank">Sandesh Portal</a></li>
+                                <li><a href="http://atcovation.in/" target="_blank">Atcovation</a></li>
+                                <li><a href="http://www.feepayr.com/" target="_blank">Feepayr</a></li>
+                                <li><a href="http://www.universityonlineadmission.com/" target="_blank">University Online Admission</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <ul>
+                                <li><a href="careers.html">Careers</a></li>
+                                <li><a href="downloadenquiry.html">Enquiry</a></li>
+                                <li><a href="feedback.html">Feedback</a></li>
+                                <li><a href="http://pms.mastersofterp.in/" target="_blank">Partner Login</a></li>
+                                <li><a href="http://cloud.mastersofterp.in/" target="_blank">Client login</a></li><li><a href="events/mastersoft-knowledge-series.html" target="_blank">Upcoming events</a></li>
+                                <li><a href="DemoDisplay.html" target="_blank">Client visit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright" class="text-center">
+        <div class="container">
+            <div class="row">&copy; 2018 MasterSoft™. All Rights Reserved </div>
+        </div>
+    </div>
+
+    <!--Get in Touch PopUp-->
+    <div class="get-in-touch" style="display:none">
+        <h2><a href="#">Request Free Demo</a></h2>
+    </div>
+    <div class="getpopup">
+        <a href="#" class="close-pop"></a>
+        <iframe src="homecontactusdemo.html" id="iFrame1" class="iframe1" style="height: 450px; width: 100%; border: none;"></iframe>
+    </div>
+    <div class="getoverlay"></div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-PR9VM4"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //$(".getpopup").css({ "left": "25%", "top": "6%" });
+            //$(".getoverlay").css({ "opacity": "1", "display": "block", "right": "0" });
+            $(".get-in-touch a").click(function () {
+                $(".getpopup").css({ "left": "50%", "top": "50%" });
+                $(".getoverlay").css({ "opacity": "1", "display": "block", "right": "0" });
+                responsive: true
+            })
+            $(".getpopup a.close-pop").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(".getoverlay").removeAttr('style');
+            });
+            $(".getoverlay").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(this).removeAttr('style');
+            });
+
+        });
+        if ($(window).width() < 768) {
+            $(".get-in-touch a").click(function () {
+                $(".getpopup").css({ "left": "50%", "top": "50%", "width": "95%" });
+                $(".getoverlay").css({ "opacity": "1", "display": "block", "right": "0" });
+                responsive: true
+            })
+            $(".getpopup a.close-pop").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(".getoverlay").removeAttr('style');
+            });
+            $(".getoverlay").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(this).removeAttr('style');
+            });
+        } else {
+            $(".get-in-touch a").click(function () {
+                $(".getpopup").css({ "left": "50%", "top": "50%" });
+                $(".getoverlay").css({ "opacity": "1", "display": "block", "right": "0" });
+                responsive: true
+            })
+            $(".getpopup a.close-pop").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(".getoverlay").removeAttr('style');
+            });
+            $(".getoverlay").click(function () {
+                $(".getpopup").removeAttr('style');
+                $(this).removeAttr('style');
+            });
+        }
+    </script>
+    <!--live chat-->
+    <!--Add the following script at the bottom of the web page (before </body></html>)-->
+    
+
+    <!--live chat end-->
+    <script src="js/bootstrap-3.3.7.min.js"></script>
+    <script src="js/gallery/script.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-73683529-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script async src='../www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+
+
+
+    
+
+    
+    
+    
+
+
+    <!-- Google Tag Manager -->
+
+
+
+
+</body>
+
+<!-- Mirrored from www.iitms.co.in/downloadenquiry.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Mar 2020 16:41:40 GMT -->
+</html>

@@ -1,0 +1,428 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from www.iitms.co.in/homecontactus.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Mar 2020 17:29:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head id="Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"5a4af856b9","applicationID":"265551880","transactionName":"YVQAbBRSV0sHUBZbX1geI2s2HFFXC1YBXV5CUAFME0AXWRVDGg==","queueTime":0,"applicationTime":3,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"5a4af856b9",applicationID:"265551880"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /><meta name="description" content="MasterSoft is one of the most trusted brand in providing highly reliable education ERP Software. Also, MasterSoft is excellent at Online examination system, school, college and university management system" /><meta name="keywords" content="university management system, university erp softwares / system, college management system, education software company, erp for education system, mastersoft nagpur, mastersoft, software company in nagpur, erp services" /><meta name="author" /><meta name="p:domain_verify" content="aa560a11f36bae1053650f0585a463af" /><link rel="shortcut icon" href="Images/logo%20and%20icon/MS_favicon.ico" /><link href="css/styles.css" rel="stylesheet" /><title>
+	MasterSoft | Online Admission System | University, College and Student Management System | ERP Services
+</title>
+
+    <!--Second menu tab code end-->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" /><link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        //function () { //v3.0
+        //    var d = document; if (d.images) {
+        //        if (!d.MM_p) d.MM_p = new Array();
+        //        var i, j = d.MM_p.length, a = .arguments; for (i = 0; i < a.length; i++)
+        //            if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+        //    }
+        //}
+
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2) ; i += 3)
+                if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+        }
+    </script>
+
+    <script type="text/javascript">
+        //function () { //v3.0
+        //    var d = document; if (d.images) {
+        //        if (!d.MM_p) d.MM_p = new Array();
+        //        var i, j = d.MM_p.length, a = .arguments; for (i = 0; i < a.length; i++)
+        //            if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+        //    }
+        //}
+
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2) ; i += 6)
+                if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+        }
+    </script>
+
+    <script type="text/javascript">
+
+        //function () { //v3.0
+        //    var d = document; if (d.images) {
+        //        if (!d.MM_p) d.MM_p = new Array();
+        //        var i, j = d.MM_p.length, a = .arguments; for (i = 0; i < a.length; i++)
+        //            if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+        //    }
+        //}
+
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2) ; i += 3)
+                if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+        }
+    </script>
+
+    <script type="text/javascript">
+
+        //function () { //v3.0
+        //    var d = document; if (d.images) {
+        //        if (!d.MM_p) d.MM_p = new Array();
+        //        var i, j = d.MM_p.length, a = .arguments; for (i = 0; i < a.length; i++)
+        //            if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+        //    }
+        //}
+
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2) ; i += 3)
+                if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+        }
+    </script>
+
+    <!--live chat-->
+
+    <script>
+        function myFunction() {
+            var person = prompt("Please enter your name", "Harry Potter");
+
+            if (person != null) {
+                document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+            }
+        }
+    </script>
+
+    <!--live chat end-->
+    <!--smooth scroll-->
+    <script>
+        $(document).ready(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+
+            $("[id*=button_Submit]").click(function () {
+                if ($("[id*=contact_phone]").val() == "") {
+                    $("[id*=lblMsg]").show();
+                    //    document.getElementById('lblMsg').style.visibility = 'visible';
+                    $("[id*=lblMsg]").text("Please enter contact number");
+                    // $("[id*=txtPhone]").focus();
+                    return false;
+                }
+
+                if ($("[id*=contact_phone]").val().length < 5) {
+                    $("[id*=lblMsg]").show();
+                    //    document.getElementById('lblMsg').style.visibility = 'visible';
+                    $("[id*=lblMsg]").text("Please enter valid contact number");
+                    // $("[id*=txtPhone]").focus();
+                    return false;
+                }
+            });
+
+            $("[id*=contact_phone]").blur(function () {
+                if ($("[id*=contact_phone]").val() == "") {
+                    $("[id*=lblMsg]").show();
+                    //    document.getElementById('lblMsg').style.visibility = 'visible';
+                    $("[id*=lblMsg]").text("");
+                    // $("[id*=txtPhone]").focus();
+                    return false;
+                }
+                if ($("[id*=contact_phone]").val().length < 5) {
+                    $("[id*=lblMsg]").show();
+                    $("[id*=lblMsg]").text("Please enter valid contact number");
+                    // $("[id*=txtPhone]").focus();
+                    return false;
+                }
+                else { $("[id*=lblMsg]").hide(); }
+            });
+        });
+
+        function Count(x) {
+
+            var nLength = document.getElementById(x).value.length;
+            if (nLength < 10 && nLength > 0) {
+                if (nLength <= 0) {
+                    document.getElementById('lblMsg').style.visibility = 'visible';
+                    document.getElementById('lblMsg').innerHTML = "Please enter contact number.";
+                }
+                if (nLength < 5) {
+                    // alert("Please enter valid mobile no.");
+                    document.getElementById('lblMsg').style.visibility = 'visible';
+                    document.getElementById('lblMsg').innerHTML = "Please enter valid contact number.";
+
+                    //document.getElementById(x).value = "";
+                }
+            }
+            // document.getElementById('lblMsg').style.visibility = 'hidden';
+        }
+    </script>
+    <!--smooth scroll end-->
+    <link href="css/ControlPanel.css" rel="stylesheet" /></head>
+<body class="contact-form">
+    <form method="post" action="https://www.iitms.co.in/homecontactus.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="WQ7iQmhcq6J4TMshq2b4P8fDj2oBKf++V3pp3YYUfcXwTvFBhHClgYmYxI2XXr1RYxUmgGLgqiI6u6P2Y2EWTgtcfl9aJ+r77cbmQDFs3Ts=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResource70d7.js?d=pynGkmcFUV13He1Qd6_TZA6wCU-oTq8P2UWbvmDCNrzJ_LWoT1zHPdgXz1kNJ7Q0csOHdmCqfcmokf9-LqzF6A2&amp;t=636427218960000000" type="text/javascript"></script>
+
+
+<script src="WebResourceecf1.axd?d=x2nkrMJGXkMELz33nwnakBX5NfcYLoPEwWNLHQNFscMOCBFSWBb4qpiLIcVq_INXN9wb5DbJdr2jkMqt28PSsD0E0StzWGclOCfTb1lBEyY1&amp;t=636427218960000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9D747D30" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="MH36Yhj2VIPjP/7UxVWS9/1yV30tNpWDW59tgQP9CD3sHpvhrC6EFRv0QkgGkAjEe/S/KL98iEjRONbut0NUDrGLLXJbbu+6eRQw+0qjkeruRSe6zvkc7fkx/1dXH92AO8hY59t0aefN11RH+wTmQEpKIUJWJME61kZ2zkvII96pJHNHPW/42gIAOUlmje4d0FYD4Ur8HXrVWKQAlc5vBgixOAFAyd7keRd82mQQnemKKSjf2VcU69mxJvRnpJNsafvGple/ELOu6qW34W40Bd1OGBSg+6J1eaa8r2vnUSIVZ0pLQUk9tedrhj85Oy0g" />
+</div>
+        <div>
+            <div class="col-md-12">
+                
+            </div>
+            <div class="col-md-12">
+                
+            </div>
+        </div>
+        <div>
+            <div class="col-sm-3">
+                <div class="form-group">
+                    
+                    <input name="contact_name" type="text" id="contact_name" class="form-control" PlaceHolder="Enter Name" name="contact[name]" titles="Name" />
+                    <span id="rfv_Name" class="error" style="visibility:hidden;">Please enter name</span>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="form-group">
+                    
+                    <input name="contact_email" type="text" id="contact_email" class="form-control" PlaceHolder="Enter Work Email" name="contact[email]" titles="Email" />
+                    <span id="rfv_Email" class="error" style="visibility:hidden;">Please enter email</span>
+                    <span id="RegularExpressionValidator1" class="error error1" style="visibility:hidden;">Please enter valid email id</span>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="form-group">
+                    
+                    <input name="contact_phone" type="text" id="contact_phone" class="form-control" onblur="Count(this.id);" onkeypress="return isNumber(event)" PlaceHolder="Enter Contact Number" name="contact[phone]" titles="Phone" />
+                    <span id="lblMsg" class="error"></span>
+                 
+            
+                     </div>
+            </div>
+            <div class="col-sm-3">
+                <select name="select_choice" id="select_choice" class="form-control">
+	<option value="0">Regarding..</option>
+	<option value="1">Career</option>
+	<option value="2">Product Enquiry</option>
+	<option value="3">Request Demo</option>
+	<option value="4">Feedback</option>
+	<option value="5">Other</option>
+
+</select>
+                <span id="RequiredFieldValidator2" class="error" style="visibility:hidden;">Please select your choice</span>
+            </div>
+        </div>
+        <div>
+            <div class="col-sm-12 text-center">
+                <input type="submit" name="button_Submit" value="Submit" onclick="ValidateNo();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;button_Submit&quot;, &quot;&quot;, true, &quot;Sub&quot;, &quot;&quot;, false, false))" id="button_Submit" class="btn btn-primary" />
+                <input class="" id="contact_project" value="MY HOME HILLVIEW" name="contact[project]" type="hidden" />
+            </div>
+        </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("rfv_Name"), document.getElementById("rfv_Email"), document.getElementById("RegularExpressionValidator1"), document.getElementById("RequiredFieldValidator2"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var rfv_Name = document.all ? document.all["rfv_Name"] : document.getElementById("rfv_Name");
+rfv_Name.controltovalidate = "contact_name";
+rfv_Name.errormessage = "Please enter name";
+rfv_Name.validationGroup = "Sub";
+rfv_Name.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rfv_Name.initialvalue = "";
+var rfv_Email = document.all ? document.all["rfv_Email"] : document.getElementById("rfv_Email");
+rfv_Email.controltovalidate = "contact_email";
+rfv_Email.errormessage = "Please enter email";
+rfv_Email.validationGroup = "Sub";
+rfv_Email.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rfv_Email.initialvalue = "";
+var RegularExpressionValidator1 = document.all ? document.all["RegularExpressionValidator1"] : document.getElementById("RegularExpressionValidator1");
+RegularExpressionValidator1.controltovalidate = "contact_email";
+RegularExpressionValidator1.focusOnError = "t";
+RegularExpressionValidator1.errormessage = "Please enter valid email id";
+RegularExpressionValidator1.validationGroup = "Sub";
+RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidator1.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+var RequiredFieldValidator2 = document.all ? document.all["RequiredFieldValidator2"] : document.getElementById("RequiredFieldValidator2");
+RequiredFieldValidator2.controltovalidate = "select_choice";
+RequiredFieldValidator2.errormessage = "Please select your choice";
+RequiredFieldValidator2.validationGroup = "Sub";
+RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator2.initialvalue = "0";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+</body>
+<script>
+    function isNumber(evt) {
+        evt = (evt) ? evt : window.event;
+        var charCode = (evt.which) ? evt.which : evt.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            document.getElementById('lblMsg').style.visibility = 'visible';
+            document.getElementById('lblMsg').innerHTML = "Please enter only numbers.";
+           // alert("Please enter only Numbers.");
+            return false;
+        }
+        document.getElementById('lblMsg').style.visibility = 'hidden';
+        return true;
+    }
+
+    function ValidateNo() {
+        var phoneNo = document.getElementById('contact_phone');
+
+        if (phoneNo.value == "" || phoneNo.value == null) {
+            document.getElementById('lblMsg').style.visibility = 'visible';
+            document.getElementById('lblMsg').innerHTML = "Please enter contact number.";
+            return false;
+        }
+        if (phoneNo.value.length < 5) {//|| phoneNo.value.length > 10) {
+            document.getElementById('lblMsg').style.visibility = 'visible';
+            document.getElementById('lblMsg').innerHTML="Please enter valid contact number.";
+          //  alert("Mobile No. is not valid, Please Enter 10 Digit Mobile No.");
+            return false;
+        }
+
+        document.getElementById('lblMsg').style.visibility = 'hidden';
+        //alert("Success ");
+        return true;
+    }
+    
+</script>
+    <script>
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-73683529-1', 'auto');
+        ga('send', 'pageview');
+</script>
+
+<!-- Mirrored from www.iitms.co.in/homecontactus.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Mar 2020 17:29:19 GMT -->
+</html>
